@@ -1,30 +1,85 @@
 <!DOCTYPE html>
-
 <html>
 
   <head>
-  <title>Bloom Valley Nursery</title>
-  <meta charset="utf-8">
-  <meta name= "viewport" content="width=device-width">
-  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <title>Bloom Valley Nursery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <!-- Подключение Bootstrap CSS через CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Подключение Font Awesome для иконок -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
-    </head>
+    
+    <!-- Подключение вашего кастомного CSS -->
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <!-- Ваш контент страницы -->
 
+    <!-- Подключение jQuery (для некоторых функций Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    
+    <!-- Подключение Popper.js (для некоторых элементов Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    
+    <!-- Подключение Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+
+
+<!-- LOGO -->
   <body>
     <header>
-    <nav>
-    <img src="images/logo.png" alt="logo image">
-    <a href="index.html"><h1>Bloom Valley Nursery</h1></a>
-    <ul>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li> <a href="customer.html">Customer Page</a></li>
-      <li> <a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-    </ul>
-    </nav>
-</header>
- <main>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div>
+          <div class="navbar-header container-fluid">
+            <a href="index.html" class="pull-left visible-md visible-lg visible-xs">
+              <img id="logo-img" img src="images/logo.png" alt="Logo image">
+            </a>
+         
+            <div class="navbar-brand">
+            <a href="#"><h1>Bloom Valley Nursery</h1></a>
+          </div>
+        <li>
+          <a href="about.html"> <span class="fas fa-info"></span><br class="hidden-xs"> About</a>
+        </li>
+        <li>
+          <a href="gallery.html"><span class="fas fa-camera"></span><br class="hidden-xs"> Gallery</a>
+        </li>
+        <li>
+          <a href="gallery.html"><span class="fas fa-user"></span><br class="hidden-xs"> Customer Page</a>
+        </li>
+        <li>
+          <a href="cart.html"><span class="fas fa-cart-shopping"></span><br class="hidden-xs"> Cart</a>
+        </li>
+          </div>
+
+        <!--
+        <li id="navMenuButton">
+          <a href="about.html">
+            <i class="fas fa-info"></i><br class="hidden-xs"> About</a>
+        </li>
+        <li id="navMenuButton">
+          <a href="gallery.html">
+            <i class="fas fa-camera"></i><br class="hidden-xs"> Gallery</a>
+        </li>
+        <li id="navMenuButton">
+          <a href="gallery.html">
+            <i class="fas fa-user"></i><br class="hidden-xs"> Customer Page</a>
+        </li>
+        <a href="tel:410-602-5008">
+        
+      </nav>
+    -->
+  </header>
+
+
+  
+
+
 
     <section class="shop-here-section">
     <h2>Why shop here…</h2>
@@ -36,21 +91,38 @@
   </section>
 </ul>
 
- 
-  <body>
-  <header>
-    <img src="images/birchTree.png" alt="Birch Tree" class="hero-image">
-  </header>
-</body>
 
-<nav>
-<ul class="shop-by-categories"><h3>Shop by Categories</h3>
-<li><a href="#"><img src="images/appleTree.png" alt="Tree">Tree</a></li>
-<li><a href="#"><img src="images/stringofPearls.png" alt="Indoor Plants">Indoor Plants</a></li>
-<li><a href="#"><img src="images/wateringCan.png" alt="Gardnen Supply">Garden Supply</a></li>
-</nav>
-</ul>
- </main>
+<div class="jumbotron">
+  <img src="images/birchTree.png" alt="birchTree" class="img-responsive visible-xs">
+</div>
+
+<div id="home-tiles" class="row">
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    <a href="#">
+      <div id="tree-tile">
+        <img src="images/appleTree.png" alt="Apple Tree">
+        <span>Trees</span>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    <a href="#">
+      <div id="plants-tile">
+        <img src="images/stringofPearls.png" alt="String of Pearls">
+        <span>Indoor Plants</span>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    <a href="#">
+      <div id="supply-tile">
+        <img src="images/wateringCan.png" alt="Watering Can">
+        <span>Garden Supply</span>
+      </div>
+    </a>
+  </div>
+</div>
+
 
 <nav>
 <ul class="review">
@@ -64,10 +136,7 @@
  </main>
 
 
-
-
-
-    <footer>Footer
+<footer>Footer
     
     <nav>
     <ul class="footer">
