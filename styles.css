@@ -126,6 +126,48 @@ li {
   background-color: #e0e0e0;
 }
 
+/* SHOP NOW SECTION */
+
+#shopping-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+#shopping-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#shopping-tile {
+  background-position: center;
+}
+
+#shopping-tile span {
+  position: absolute;
+  font-family: "Comfortaa", "Calibri", "Arial", sans-serif;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+#shopping-tile img {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0; /* Remove image margins */
+  width: 100%; /* Fill the container width */
+  height: 100%; /* Fill the container height */
+  object-fit: contain; /* Maintain image proportions */
+}
+
 /* SHOP BY CATEGORIES*/
 
 #tree-tile, #plants-tile, #supply-tile {
@@ -133,7 +175,7 @@ li {
   width: 100%;
   margin-bottom: 15px;
   position: relative;
-  border: 2px solid #3F0C1F;
+ 
   overflow: hidden;
 }
 
@@ -170,7 +212,7 @@ li {
 
 #tree-tile img, #plants-tile img, #supply-tile img {
   position: relative;
-  border: 2px solid #3F0C1F;
+  
   overflow: hidden;
   padding: 0;
   margin: 0; /* Убираем отступы у изображения */
