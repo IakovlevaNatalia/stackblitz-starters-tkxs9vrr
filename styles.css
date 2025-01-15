@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: 0;
+  
   font-family: "Comfortaa", "Calibri", "Arial", sans-serif;
   color: black;
   background-color: #014038;
@@ -20,6 +20,7 @@ body {
 #logo-img {
   width: 100px;
   margin: 10px 15px 10px 0;
+  float: left;
 }
 
 .navbar-brand {
@@ -52,7 +53,10 @@ nav {
   gap: 0.5rem;
   
 }
-
+.navbar-brand a h1 {
+  margin: 0; /* Убирает отступы */
+  text-align: left; /* Заголовок слева */
+}
 
 nav a {
   display: inline-block;
@@ -66,6 +70,61 @@ nav a {
   font-size: 18px;
 }
 
+li {
+  list-style: none; /* Убирает буллиты */
+  padding: 0; /* Убирает возможные отступы внутри элементов списка */
+  margin: 0; /* Убирает возможные внешние отступы */
+}
+
+.icon-container a .fas {
+  font-size: 36px; /* Размер иконок */
+  margin-left: 10px; /* Уменьшенный отступ между иконками */
+  display: inline-block;
+  text-decoration: none; /* Убирает подчеркивание у ссылок */
+  
+}
+/* Стили для ссылок в контейнере */
+.icon-container a {
+  text-decoration: none; /* Убирает подчеркивание у ссылок */
+  margin-right: 0px; /* Добавляет отступы между иконками */
+  display: inline-block; /* Устанавливает блочный элемент, но на одной строке */
+}
+
+/* Контейнер для иконок */
+.icon-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* WHY SHOP HERE  SECTION*/
+.why-shop-here {
+  text-align: center; /* Выравнивание заголовка по центру */
+  padding: 20px;
+}
+
+/* Использование flexbox для размещения контейнеров на одной строке */
+.flex-container {
+  display: flex;
+  justify-content: space-between; /* Распределяет элементы по доступному пространству */
+  gap: 20px; /* Расстояние между элементами */
+}
+
+/* Стили для каждого контейнера */
+.perk {
+  flex: 1; /* Устанавливает одинаковую ширину для всех контейнеров */
+  padding: 20px;
+  background-color: #96baa0;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для ховера, чтобы добавить эффект при наведении */
+.perk:hover {
+  background-color: #e0e0e0;
+}
 
 /* SHOP BY CATEGORIES*/
 
@@ -96,6 +155,7 @@ nav a {
 
 #tree-tile span, #plants-tile span, #supply-tile span {
   position: absolute;
+  font-family: "Comfortaa", "Calibri", "Arial", sans-serif;
   bottom: 0;
   right: 0;
   width: 100%;
@@ -117,5 +177,84 @@ nav a {
   width: 100%; /* Заполняет всю ширину контейнера */
   height: 100%; /* Заполняет всю высоту контейнера */
   object-fit: contain; /* Сохраняет пропорции изображения */
+}
+
+/* SHOPPING PROMOS */
+
+.shop-here-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between; /* Распределяет элементы по доступному пространству */
+  gap: 20px; /* Расстояние между элементами */
+}
+
+/* Стили для каждого контейнера */
+.promo {
+  flex: 1; /* Устанавливает одинаковую ширину для всех контейнеров */
+  padding: 20px;
+  background-color: #96baa0;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для ховера, чтобы добавить эффект при наведении */
+.promo:hover {
+  background-color: #e0e0e0;
+}
+
+
+/* CLIENTS HIGHLIGHTS SECTION */
+
+h2 {
+  font-size: 24px;
+  color: #f7f7f7;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.review {
+  list-style-type: none; /* Убирает буллеты */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Размещает элементы на одной строке */
+}
+
+.review li {
+  margin-right: 20px; /* Добавляет промежуток между элементами */
+}
+
+.review li a {
+  text-decoration: none; /* Убирает подчеркивание с ссылки */
+  color: #000; /* Цвет текста */
+  font-size: 16px; /* Размер шрифта */
+}
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #F0C06D;
+  border-top: 0;
+}
+
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+
+.fab.fa-facebook, .fab.fa-instagram, .fab.fa-twitter {
+  font-size: 36px;
+}
+
+.menu-item a {
+  color: #014038;
+}
+
+.menu-item a:hover {
+  color: #bdd4da;  /* Цвет при наведении поменять */
 }
 

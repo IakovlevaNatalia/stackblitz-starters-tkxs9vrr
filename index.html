@@ -34,7 +34,7 @@
   <body>
     <header>
       <nav id="header-nav" class="navbar navbar-default">
-        <div>
+        <div class="container">
           <div class="navbar-header container-fluid">
             <a href="index.html" class="pull-left visible-md visible-lg visible-xs">
               <img id="logo-img" img src="images/logo.png" alt="Logo image">
@@ -43,37 +43,17 @@
             <div class="navbar-brand">
             <a href="#"><h1>Bloom Valley Nursery</h1></a>
           </div>
-        <li>
-          <a href="about.html"> <span class="fas fa-info"></span><br class="hidden-xs"> About</a>
-        </li>
-        <li>
-          <a href="gallery.html"><span class="fas fa-camera"></span><br class="hidden-xs"> Gallery</a>
-        </li>
-        <li>
-          <a href="gallery.html"><span class="fas fa-user"></span><br class="hidden-xs"> Customer Page</a>
-        </li>
-        <li>
-          <a href="cart.html"><span class="fas fa-cart-shopping"></span><br class="hidden-xs"> Cart</a>
-        </li>
-          </div>
 
-        <!--
-        <li id="navMenuButton">
-          <a href="about.html">
-            <i class="fas fa-info"></i><br class="hidden-xs"> About</a>
-        </li>
-        <li id="navMenuButton">
-          <a href="gallery.html">
-            <i class="fas fa-camera"></i><br class="hidden-xs"> Gallery</a>
-        </li>
-        <li id="navMenuButton">
-          <a href="gallery.html">
-            <i class="fas fa-user"></i><br class="hidden-xs"> Customer Page</a>
-        </li>
-        <a href="tel:410-602-5008">
-        
-      </nav>
-    -->
+            <div class="icon-container">
+              <ul id="nav-list" class="nav navbar-nav navbar-right"></ul>
+              <a href="about.html"><span class="fas fa-info"></span><br class="hidden-xs"> About</a>
+              <a href="gallery.html"><span class="fas fa-camera"></span><br class="hidden-xs"> Gallery</a>
+              <a href="gallery.html"><span class="fas fa-user"></span><br class="hidden-xs"> Customer Page</a>
+              <a href="cart.html"><span class="fas fa-cart-shopping"></span><br class="hidden-xs"> Cart</a>
+            </div>
+      </div>
+      </div>
+    </nav>
   </header>
 
 
@@ -81,7 +61,7 @@
 
 
 
-    <section class="shop-here-section">
+    <section class="why-shop-here">
     <h2>Why shop here…</h2>
     <div class="flex-container">
         <div class="perk">Value / Perk 1</div>
@@ -90,6 +70,7 @@
     </div>
   </section>
 </ul>
+
 
 
 <div class="jumbotron">
@@ -123,42 +104,59 @@
   </div>
 </div>
 
-
+<section class="shop-here-section">
+  <h2>Shopping Promos</h2>
+  <div class="flex-container">
+    <div class="promo">Promo 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    <div class="promo">Promo 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    <div class="promo">Promo 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    <div class="promo">Promo 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    <div class="promo">Promo 5: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+  </div>
+</section>
 <nav>
-<ul class="review">
-<li><a href="#">review</a></li>
-<li><a href="#">review</a></li>
-<li><a href="#">review</a></li>
-
+  <h2>Clients Highlights</h2>
+  <ul class="review">
+    <li><a href="#">review Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+    <li><a href="#">review Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+    <li><a href="#">review Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+  </ul>
 </nav>
-</ul>
 
  </main>
+ 
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
 
 
-<footer>Footer
-    
+  <ul class="footer">
     <nav>
-    <ul class="footer">
-    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    <li>
+    <a href="#"><span class="fab fa-facebook"></span><br class="hidden-xs"></a>
+    </li>
+    <li>
+      <a href="#"><span class="fab fa-instagram"></span><br class="hidden-xs"></a>
+    </li>
+    <li>
+      <a href="#"><span class="fab fa-twitter"></span><br class="hidden-xs"></a>
+    </li>
+    </nav></br>
     <form action="#" method="post" class="subscribe-form">
     <label for="email">Sign Up for our newsletter</label>
     <input type="email" id="email" name="email" placeholder="email" required>
     <button type="submit">Subscribe</button>
-  </form>
+  </ul>
 
-</ul>
+  <ul id="menu" class="menu-list">
+    <li id="clients-highlights" class="menu-item"><a href="index.html">Clients Highlights</a></li>
+    <li id="shopping-promos" class="menu-item"><a href="about.html">Shopping promos</a></li>
+    <li id="item-images" class="menu-item"><a href="menu.html">Item images</a></li>
+    <li id="shopping-promos-2" class="menu-item"><a href="about.html">Shopping promos</a></li>
+    <li id="categories" class="menu-item"><a href="menu.html">Categories</a></li>
+  </ul>
 
-<ul>
-<li><a href="index.html">Clients Highlights</a></li>
-<li><a href="about.html">Shopping promos</a></li>
-<li> <a href="menu.html">Item images</a></li>
-<li><a href="about.html">Shopping promos</a></li>
-<li> <a href="menu.html">Categories</a></li>
-</ul>
-</nav>
+      </div>
     </footer>
   </body>
 
