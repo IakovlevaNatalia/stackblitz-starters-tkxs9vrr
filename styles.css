@@ -7,7 +7,6 @@ body {
   font-family: "Comfortaa", "Calibri", "Arial", sans-serif;
   color: black;
   background-color: #014038;
-  
 }
 
 /** HEADER **/
@@ -43,7 +42,6 @@ body {
   text-decoration: none;
 }
 
-
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -51,8 +49,8 @@ nav {
   justify-content: center;
   padding: 0.5rem;
   gap: 0.5rem;
-  
 }
+
 .navbar-brand a h1 {
   margin: 0; /* Убирает отступы */
   text-align: left; /* Заголовок слева */
@@ -83,14 +81,13 @@ li {
   text-decoration: none; /* Убирает подчеркивание у ссылок */
   
 }
-/* Стили для ссылок в контейнере */
+
 .icon-container a {
   text-decoration: none; /* Убирает подчеркивание у ссылок */
   margin-right: 0px; /* Добавляет отступы между иконками */
   display: inline-block; /* Устанавливает блочный элемент, но на одной строке */
 }
 
-/* Контейнер для иконок */
 .icon-container {
   display: flex;
   justify-content: flex-end;
@@ -123,12 +120,16 @@ li {
 
 /* Стили для ховера, чтобы добавить эффект при наведении */
 .perk:hover {
-  background-color: #e0e0e0;
+  background-color: #f7f7f7;
 }
 
 /* SHOP NOW SECTION */
+.shop-now-section {
+  text-align: center;
+  padding: 20px;
+}
 
-#shopping-tile {
+#birch-tile, #birdHouse-tile, #soil-tile {
   height: 250px;
   width: 100%;
   margin-bottom: 15px;
@@ -136,89 +137,44 @@ li {
   overflow: hidden;
 }
 
-#shopping-tile:hover {
-  box-shadow: 0 1px 5px 1px #cccccc;
+#birch-tile:hover, #birdHouse-tile:hover, #soil-tile:hover {
+  box-shadow: 0 1px 5px 1px #f7f7f7;
 }
 
-#shopping-tile {
+#birch-tile  {
   background-position: center;
 }
 
-#shopping-tile span {
+#birdHouse-tile {
+  background-position: center;
+}
+
+#soil-tile  {
+  background-position: center;
+}
+#birch-tile span, #birdHouse-tile span, #soil-tile span  {
   position: absolute;
   font-family: "Comfortaa", "Calibri", "Arial", sans-serif;
+  font-weight: bold;
   bottom: 0;
   right: 0;
   width: 100%;
   text-align: center;
   font-size: 1.6em;
   text-transform: uppercase;
-  background-color: #000;
-  color: #fff;
+  background-color: #F0C06D;
+  color: #00231c;
   opacity: .8;
 }
 
-#shopping-tile img {
+#birch-tile img, #birdHouse-tile img, #soil-tile img {
   position: relative;
-  overflow: hidden;
-  padding: 0;
-  margin: 0; /* Remove image margins */
-  width: 100%; /* Fill the container width */
-  height: 100%; /* Fill the container height */
-  object-fit: contain; /* Maintain image proportions */
-}
-
-/* SHOP BY CATEGORIES*/
-
-#tree-tile, #plants-tile, #supply-tile {
-  height: 250px;
-  width: 100%;
-  margin-bottom: 15px;
-  position: relative;
- 
-  overflow: hidden;
-}
-
-#tree-tile:hover, #plants-tile:hover, #supply-tile:hover {
-  box-shadow: 0 1px 5px 1px #cccccc;
-}
-
-#tree-tile {
-  background-position: center;
-}
-
-#plants-tile {
-  background-position: center;
-}
-
-#supply-tile {
-  background-position: center;
-}
-
-#tree-tile span, #plants-tile span, #supply-tile span {
-  position: absolute;
-  font-family: "Comfortaa", "Calibri", "Arial", sans-serif;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 1.6em;
-  text-transform: uppercase;
-  background-color: #000;
-  color: #fff;
-  opacity: .8;
-  
-}
-
-#tree-tile img, #plants-tile img, #supply-tile img {
-  position: relative;
-  
   overflow: hidden;
   padding: 0;
   margin: 0; /* Убираем отступы у изображения */
   width: 100%; /* Заполняет всю ширину контейнера */
   height: 100%; /* Заполняет всю высоту контейнера */
-  object-fit: contain; /* Сохраняет пропорции изображения */
+  object-fit: cover; /* Сохраняет пропорции изображения */
 }
 
 /* SHOPPING PROMOS */
@@ -247,12 +203,61 @@ li {
 
 /* Стили для ховера, чтобы добавить эффект при наведении */
 .promo:hover {
-  background-color: #e0e0e0;
+  background-color: #f7f7f7;
 }
 
+/* SHOP BY CATEGORIES*/
+#tree-tile, #plants-tile, #supply-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+#tree-tile:hover, #plants-tile:hover, #supply-tile:hover {
+  box-shadow: 0 1px 5px 1px #f7f7f7;
+}
+
+#tree-tile {
+  background-position: center;
+}
+
+#plants-tile {
+  background-position: center;
+}
+
+#supply-tile {
+  background-position: center;
+}
+
+#tree-tile span, #plants-tile span, #supply-tile span {
+  position: absolute;
+  font-family: "Comfortaa", "Calibri", "Arial", sans-serif;
+  font-weight: bold;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #F0C06D;
+  color: #00231c;
+  opacity: .8;
+  
+}
+
+#tree-tile img, #plants-tile img, #supply-tile img {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0; /* Убираем отступы у изображения */
+  width: 100%; /* Заполняет всю ширину контейнера */
+  height: 100%; /* Заполняет всю высоту контейнера */
+  object-fit: cover; /* Сохраняет пропорции изображения */
+}
 
 /* CLIENTS HIGHLIGHTS SECTION */
-
 h2 {
   font-size: 24px;
   color: #f7f7f7;
@@ -272,7 +277,7 @@ h2 {
 
 .review li a {
   text-decoration: none; /* Убирает подчеркивание с ссылки */
-  color: #000; /* Цвет текста */
+  color: #00231c; /* Цвет текста */
   font-size: 16px; /* Размер шрифта */
 }
 /* FOOTER */
@@ -297,6 +302,214 @@ h2 {
 }
 
 .menu-item a:hover {
-  color: #bdd4da;  /* Цвет при наведении поменять */
+  color: #F7F7F7;  /* Цвет при наведении поменять */
 }
 
+.section-container {
+  margin: 20px auto; /* Центрирование и отступ сверху/снизу */
+  padding: 20px; /* Внутренние отступы */
+  padding-left: 30px; /* Отступ слева */
+  max-width: 1500px; /* Максимальная ширина для ограничения контента */
+  box-sizing: border-box; /* Учитывать отступы и границы в размере */
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.gallery-item {
+  background-color: #96baa0;
+  border: 1px solid #96BAA0;
+  color: #00231c;
+  font-family: "Comfortaa", "Calibri", "Arial", sans-serif;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* VIEW CART BUTTON */
+.view-cart {
+  background-color: #F0C06D;
+  color: #00231c;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Comfortaa", "Calibri", "Arial", sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 15px;
+}
+
+.view-cart:hover {
+  background-color: #6C8F89;
+  transform: scale(1.05);
+}
+
+/* ADD to CART BUTTON*/
+.add-to-cart {
+  background-color: #F0C06D;
+  color: #00231c;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  font-family: "Comfortaa", "Calibri", "Arial", sans-serif;
+  font-weight: bold;
+}
+
+.add-to-cart:hover {
+  background-color: #F0C06D;
+}
+
+.shopping-cart {
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center;    /* Центрирование по вертикали, если нужно */
+  
+}
+
+/* ABOUT US*/
+.about-section {
+  background-color: #F7F7F7;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+  font-size: 2em;
+  color: #00231c;
+  font-family: "Comfortaa", "Arial", sans-serif;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+  font-family: "Arial", sans-serif;
+}
+/* Hours Section */
+.hours-section {
+  background-color: #F7F7F7;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hours-section h2 {
+  font-size: 2em;
+  color: #00231c;
+  font-family: "Comfortaa", "Arial", sans-serif;
+  margin-bottom: 15px;
+}
+
+.hours-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.hours-section li {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.hours-section strong {
+  color: #00231c;
+  font-weight: bold;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #F7F7F7;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  font-size: 2em;
+  color: #00231c;
+  font-family: "Comfortaa", "Arial", sans-serif;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.1em;
+  color: #00231c;
+  margin-bottom: 8px;
+  font-family: "Arial", sans-serif;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center; /* Центрируем кнопки по горизонтали */
+  gap: 20px; /* Расстояние между кнопками */
+  margin-top: 20px;
+}
+
+.form-actions button {
+  background-color: #F0C06D;
+  color: #014038;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Comfortaa", "Arial", sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+}
+
+.form-actions button:hover {
+  background-color: #96BAA0;
+  transform: scale(1.05);
+}
+
+.form-actions button[type="reset"] {
+  background-color: #F0C06D;
+}
+
+.form-actions button[type="reset"]:hover {
+  background-color: #96BAA0;
+}

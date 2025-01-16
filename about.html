@@ -1,49 +1,52 @@
 <!DOCTYPE html>
-
 <html>
     <head>
-        <title>Bloom Valley Nursery</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <link
-          href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
-          rel="stylesheet"
-        />
-        <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-          rel="stylesheet"
-        />
-        <link href="styles.css" rel="stylesheet" />
-      </head>
+      <title>Bloom Valley Nursery</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+      <link href="styles.css" rel="stylesheet">
+    </head>
 
-  <body>
-    <header>
-    <nav>
-    <img src="images/logo.png" alt="logo image">
-    <a href="index.html"><h1>Bloom Valley Nursery</h1></a>
-    <ul>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li> <a href="customer.html">Customer Page</a></li>
-      <li> <a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-    </ul>
-    </nav>
-</header>
+    <!-- LOGO -->
+      <body>
+        <header>
+          <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+              <div class="navbar-header container-fluid">
+                <a href="index.html" class="pull-left visible-md visible-lg visible-xs">
+                  <img id="logo-img" src="images/logo.png" alt="Logo image">
+                </a>
+              <div class="navbar-brand">
+                <a href="#"><h1>Bloom Valley Nursery</h1></a>
+              </div>
+              <div class="icon-container">
+                <ul id="nav-list" class="nav navbar-nav navbar-right"></ul>
+                <a href="about.html"><span class="fas fa-info"></span><br class="hidden-xs"> About</a>
+                <a href="gallery.html"><span class="fas fa-camera"></span><br class="hidden-xs"> Gallery</a>
+                <a href="gallery.html"><span class="fas fa-user"></span><br class="hidden-xs"> Customer Page</a>
+                <a href="cart.html"><span class="fas fa-shopping-cart"></span><br class="hidden-xs"> Cart</a>
+              </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 <main>
-  <section class="about-section">
+  <section class="about-section section-container">
     <h2>About Us</h2>
     <p>
       Lorem ipsum dolor sit amet. Et voluptatem magni vel minima consectetur est illum magnam et reiciendis amet ut sequi voluptatibus. Quo beatae quisquam ut suscipit illo aut totam magni rem corporis asperiores non vero pariatur non libero modi id similique asperiores.
     </p>
   </section>
-  <section class="hours-section">
+  <section class="hours-section section-container">
     <h2>Hours of Operation</h2>
     <ul>
       <li><strong>Monday–Friday:</strong> 9 a.m. to 6 p.m.</li>
       <li><strong>Saturday–Sunday:</strong> 10 a.m. to 5 p.m.</li>
     </ul>
   </section>
-  <section class="contact-section">
+  <section class="contact-section section-container">
     <h2>Contact Us</h2>
     <form action="#" method="post">
       <div class="form-group">
@@ -62,48 +65,44 @@
       </div>
 
       <div class="form-group">
-        <label for="feedback">Feedback/Order Information:</label>
+        <label for="feedback">Feedback/Custom Order:</label>
         <textarea id="feedback" name="feedback" rows="4" placeholder="Enter your feedback or order details"></textarea>
-      </div>
-
-      <div class="form-group">
-        <label for="custom-order">Custom Order:</label>
-        <input type="checkbox" id="custom-order" name="custom-order">
       </div>
 
       <div class="form-actions">
         <button type="submit">Submit</button>
-        <button type="reset">Clear Form</button>
+        <button type="reset">Clear</button>
       </div>
     </form>
   </section>
 </main>
-
-
-    <footer>Footer
-    
-    <nav>
-    <ul class="footer">
-    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-    <form action="#" method="post" class="subscribe-form">
-    <label for="email">Sign Up for our newsletter</label>
-    <input type="email" id="email" name="email" placeholder="email" required>
-    <button type="submit">Subscribe</button>
-  </form>
-
-</ul>
-
-<ul>
-<li><a href="index.html">Clients Highlights</a></li>
-<li><a href="about.html">Shopping promos</a></li>
-<li> <a href="menu.html">Item images</a></li>
-<li><a href="about.html">Shopping promos</a></li>
-<li> <a href="menu.html">Categories</a></li>
-</ul>
-</nav>
-    </footer>
-  </body>
-
+   <!--FOOTER-->
+   <footer class="panel-footer">
+    <div class="container"> 
+      <div class="row">
+        <ul class="footer">
+          <nav>
+            <li><a href="#"><span class="fab fa-facebook"></span><br class="hidden-xs"></a></li>
+            <li><a href="#"><span class="fab fa-instagram"></span><br class="hidden-xs"></a></li>
+            <li><a href="#"><span class="fab fa-twitter"></span><br class="hidden-xs"></a></li>
+          </nav>  
+            <form action="#" method="post" class="subscribe-form">
+            <label for="email">Sign Up for our newsletter</label>
+            <input type="email" id="email" name="email" placeholder="email" required>
+            <button type="submit">Subscribe</button>
+        </ul>
+          <ul id="menu" class="menu-list">
+            <li id="clients-highlights" class="menu-item"><a href="index.html">Clients Highlights</a></li>
+            <li id="shopping-promos" class="menu-item"><a href="about.html">Shopping promos</a></li>
+            <li id="item-images" class="menu-item"><a href="menu.html">Item images</a></li>
+            <li id="shopping-promos-2" class="menu-item"><a href="about.html">Shopping perks</a></li>
+            <li id="categories" class="menu-item"><a href="menu.html">Categories</a></li>
+        </ul>
+      </div>
+  </footer>
+</body>
 </html>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

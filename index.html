@@ -1,196 +1,165 @@
 <!DOCTYPE html>
 <html>
+    <head>
+      <title>Bloom Valley Nursery</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+      <link href="styles.css" rel="stylesheet">
+    </head>
 
-  <head>
-    <title>Bloom Valley Nursery</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    
-    <!-- Подключение Bootstrap CSS через CDN -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Подключение Font Awesome для иконок -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    
-    <!-- Подключение вашего кастомного CSS -->
-    <link href="styles.css" rel="stylesheet">
-  </head>
-  
-  <body>
-    <!-- Ваш контент страницы -->
-
-    <!-- Подключение jQuery (для некоторых функций Bootstrap) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    
-    <!-- Подключение Popper.js (для некоторых элементов Bootstrap) -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    
-    <!-- Подключение Bootstrap JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
-
-
-<!-- LOGO -->
-  <body>
-    <header>
-      <nav id="header-nav" class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header container-fluid">
-            <a href="index.html" class="pull-left visible-md visible-lg visible-xs">
-              <img id="logo-img" img src="images/logo.png" alt="Logo image">
-            </a>
-         
-            <div class="navbar-brand">
-            <a href="#"><h1>Bloom Valley Nursery</h1></a>
+    <!-- LOGO -->
+      <body>
+        <header>
+          <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+              <div class="navbar-header container-fluid">
+                <a href="index.html" class="pull-left visible-md visible-lg visible-xs">
+                  <img id="logo-img" src="images/logo.png" alt="Logo image">
+                </a>
+              <div class="navbar-brand">
+                <a href="#"><h1>Bloom Valley Nursery</h1></a>
+              </div>
+              <div class="icon-container">
+                <ul id="nav-list" class="nav navbar-nav navbar-right"></ul>
+                <a href="about.html"><span class="fas fa-info"></span><br class="hidden-xs"> About</a>
+                <a href="gallery.html"><span class="fas fa-camera"></span><br class="hidden-xs"> Gallery</a>
+                <a href="gallery.html"><span class="fas fa-user"></span><br class="hidden-xs"> Customer Page</a>
+                <a href="cart.html"><span class="fas fa-shopping-cart"></span><br class="hidden-xs"> Cart</a>
+              </div>
           </div>
+        </div>
+      </nav>
+    </header>
 
-            <div class="icon-container">
-              <ul id="nav-list" class="nav navbar-nav navbar-right"></ul>
-              <a href="about.html"><span class="fas fa-info"></span><br class="hidden-xs"> About</a>
-              <a href="gallery.html"><span class="fas fa-camera"></span><br class="hidden-xs"> Gallery</a>
-              <a href="gallery.html"><span class="fas fa-user"></span><br class="hidden-xs"> Customer Page</a>
-              <a href="cart.html"><span class="fas fa-shopping-cart"></span><br class="hidden-xs"> Cart</a>
+    <!-- MAIN CONTENT WHY SHOP HERE SECTION-->
+    <main>
+      <section class="shop-now-section section-container">
+        <h2>Why shop here…</h2>
+        <div class="flex-container">
+            <div class="perk">Value / Perk 1</div>
+            <div class="perk">Value / Perk 2</div>
+            <div class="perk">Value / Perk 3</div>
+        </div>
+      </section>
+
+      <!--SHOP NOW SECTION-->
+      <nav>
+        <section class="shop-now-section section-container">
+          <h2>Shop Now</h2>
+          <div id="shop-tile" class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <a href="gallery.html">
+                <div id="birch-tile">
+                  <img src="images/birchTree.png" alt="Birch Tree">
+                  <span>Shop now</span>
+                </div>
+              </a>
             </div>
-      </div>
-      </div>
-    </nav>
-  </header>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <a href="gallery.html">
+                <div id="birdHouse-tile">
+                  <img src="images/birdHouse.png" alt="Bird House">
+                  <span>Shop now</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <a href="gallery.html">
+                <div id="soil-tile">
+                  <img src="images/pottingSoil.png" alt="Potting Soil">
+                  <span>Shop now</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </nav>
 
+        <!--SHOPPING PROMOS-->
+        <section class="shop-now-section section-container">
+          <h2>Shopping Promos</h2>
+          <div class="flex-container">
+            <div class="promo">Promo 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <div class="promo">Promo 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <div class="promo">Promo 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <div class="promo">Promo 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <div class="promo">Promo 5: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          </div>
+        </section>
 
+        <!--SHOPPING BY CATEGORIES-->
+        <nav>
+          <section class="shop-here-section">
+            <h2>Shopping By Categories</h2>
+            <div id="home-tiles" class="row">
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <a href="#">
+                  <div id="tree-tile">
+                    <img src="images/appleTree.png" alt="Apple Tree">
+                    <span>Trees</span>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <a href="#">
+                  <div id="plants-tile">
+                    <img src="images/stringofPearls.png" alt="String of Pearls">
+                    <span>Indoor Plants</span>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <a href="#">
+                  <div id="supply-tile">
+                    <img src="images/wateringCan.png" alt="Watering Can">
+                    <span>Garden Supplies</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+        </nav>
+
+        <!--CLIENTS HIGHLIGHTS-->
+        <section class="shop-now-section section-container">
+          <h2>Clients Highlights</h2>
+          <div class="flex-container">
+              <div class="perk">review Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+              <div class="perk">review Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+              <div class="perk">review Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          </div>
+        </section>
+    </main>
   
-
-
-
-    <section class="why-shop-here">
-    <h2>Why shop here…</h2>
-    <div class="flex-container">
-        <div class="perk">Value / Perk 1</div>
-        <div class="perk">Value / Perk 2</div>
-        <div class="perk">Value / Perk 3</div>
-    </div>
-  </section>
-</ul>
-
-
-<section class="shop-here-section">
-  <h2>Shop Now</h2>
-  <div id="shop-tile" class="row">
-    <div class="col-md-4 col-sm-6 col-xs-12">
-      <a href="gallery.html">
-        <div id="shopping-tile">
-          <img src="images/birchTree.png" alt="Birch Tree">
-          <span>Shop now</span>
+   <!--FOOTER-->
+    <footer class="panel-footer">
+      <div class="container"> 
+        <div class="row">
+          <ul class="footer">
+            <nav>
+              <li><a href="#"><span class="fab fa-facebook"></span><br class="hidden-xs"></a></li>
+              <li><a href="#"><span class="fab fa-instagram"></span><br class="hidden-xs"></a></li>
+              <li><a href="#"><span class="fab fa-twitter"></span><br class="hidden-xs"></a></li>
+            </nav>  
+              <form action="#" method="post" class="subscribe-form">
+              <label for="email">Sign Up for our newsletter</label>
+              <input type="email" id="email" name="email" placeholder="email" required>
+              <button type="submit">Subscribe</button>
+          </ul>
+            <ul id="menu" class="menu-list">
+              <li id="clients-highlights" class="menu-item"><a href="index.html">Clients Highlights</a></li>
+              <li id="shopping-promos" class="menu-item"><a href="about.html">Shopping promos</a></li>
+              <li id="item-images" class="menu-item"><a href="menu.html">Item images</a></li>
+              <li id="shopping-promos-2" class="menu-item"><a href="about.html">Shopping perks</a></li>
+              <li id="categories" class="menu-item"><a href="menu.html">Categories</a></li>
+          </ul>
         </div>
-      </a>
-    </div>
-    <div class="col-md-4 col-sm-6 col-xs-12">
-      <a href="gallery.html">
-        <div id="shopping-tile">
-          <img src="images/birdHouse.png" alt="Bird House">
-          <span>Shop now</span>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4 col-sm-6 col-xs-12">
-      <a href="gallery.html">
-        <div id="shopping-tile">
-          <img src="images/pottingSoil.png" alt="Potting Soil">
-          <span>Shop now</span>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="shop-here-section">
-  <h2>Shopping Promos</h2>
-  <div class="flex-container">
-    <div class="promo">Promo 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-    <div class="promo">Promo 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-    <div class="promo">Promo 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-    <div class="promo">Promo 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-    <div class="promo">Promo 5: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-  </div>
-</section>
-<nav>
-
-<section class="shop-here-section">
-<h2>Shopping By Categories</h2>
-<div id="home-tiles" class="row">
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <a href="#">
-      <div id="tree-tile">
-        <img src="images/appleTree.png" alt="Apple Tree">
-        <span>Trees</span>
-      </div>
-    </a>
-  </div>
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <a href="#">
-      <div id="plants-tile">
-        <img src="images/stringofPearls.png" alt="String of Pearls">
-        <span>Indoor Plants</span>
-      </div>
-    </a>
-  </div>
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <a href="#">
-      <div id="supply-tile">
-        <img src="images/wateringCan.png" alt="Watering Can">
-        <span>Garden Supplies</span>
-      </div>
-    </a>
-  </div>
-</div>
-</section>
-
-
-  
-  <section class="shop-here-section">
-  <h2>Clients Highlights</h2>
-  <ul class="review">
-    <li><a href="#">review Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-    <li><a href="#">review Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-    <li><a href="#">review Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-  </ul>
-</nav>
-</section>
-
- </main>
- 
-  <footer class="panel-footer">
-    <div class="container">
-      <div class="row">
-
-
-  <ul class="footer">
-    <nav>
-    <li>
-    <a href="#"><span class="fab fa-facebook"></span><br class="hidden-xs"></a>
-    </li>
-    <li>
-      <a href="#"><span class="fab fa-instagram"></span><br class="hidden-xs"></a>
-    </li>
-    <li>
-      <a href="#"><span class="fab fa-twitter"></span><br class="hidden-xs"></a>
-    </li>
-    </nav></br>
-    <form action="#" method="post" class="subscribe-form">
-    <label for="email">Sign Up for our newsletter</label>
-    <input type="email" id="email" name="email" placeholder="email" required>
-    <button type="submit">Subscribe</button>
-  </ul>
-
-  <ul id="menu" class="menu-list">
-    <li id="clients-highlights" class="menu-item"><a href="index.html">Clients Highlights</a></li>
-    <li id="shopping-promos" class="menu-item"><a href="about.html">Shopping promos</a></li>
-    <li id="item-images" class="menu-item"><a href="menu.html">Item images</a></li>
-    <li id="shopping-promos-2" class="menu-item"><a href="about.html">Shopping promos</a></li>
-    <li id="categories" class="menu-item"><a href="menu.html">Categories</a></li>
-  </ul>
-
-      </div>
     </footer>
   </body>
-
 </html>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
