@@ -1,113 +1,125 @@
 <!DOCTYPE html>
-
 <html>
 
-  <head>
+<head>
   <title>Bloom Valley Nursery</title>
   <meta charset="utf-8">
-  <meta name= "viewport" content="width=device-width">
-  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
-    </head>
+</head>
 
-  <body>
-    <header>
-    <nav>
-    <img src="images/logo.png" alt="logo image">
-    <a href="index.html"><h1>Bloom Valley Nursery</h1></a>
-    <ul>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li> <a href="customer.html">Customer Page</a></li>
-      <li> <a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-    </ul>
-    </nav>
-</header>
-<main>
-    <section class="events-section">
-        <h2>Upcoming Events</h2>
-        <article class="event">
-          <h3>Spring Gardening Workshop</h3>
-          <p>Date: April 15, 2025</p>
-          <p>Time: 10:00 AM - 2:00 PM</p>
-          <p>Location: Bloom Valley Nursery</p>
-          <p>Join us for a hands-on workshop where you'll learn how to prepare your garden for spring! Tools and materials will be provided.</p>
-        </article>
-        <article class="event">
-          <h3>Plant Swap Meetup</h3>
-          <p>Date: May 20, 2025</p>
-          <p>Time: 12:00 PM - 4:00 PM</p>
-          <p>Location: Bloom Valley Community Center</p>
-          <p>Bring your plants and cuttings to swap with other gardening enthusiasts. A great way to expand your collection!</p>
-        </article>
-      </section>
-    
-      <section class="collaborations-section">
-        <h2>Our Collaborations</h2>
-        <p>At Bloom Valley Nursery, we are proud to partner with local businesses and organizations to support our community and promote sustainable gardening practices.</p>
-        <ul class="collaboration-list">
-          <li><strong>Green Thumb Landscaping:</strong> Joint landscaping projects for schools and public spaces.</li>
-          <li><strong>Community Garden Initiative:</strong> Sponsorship of local community gardens.</li>
-          <li><strong>EcoLife Non-Profit:</strong> Educational programs and workshops on eco-friendly gardening techniques.</li>
-        </ul>
-      </section>
-      <section class="client-highlights">
-        <h2>Client Highlights</h2>
-        <div style="display: flex; justify-content: space-around;">
-  
-          <!-- Первый список -->
-          <div>
-            <h3>Top Purchasers</h3>
-            <ul>
-              <li>
-                <img src="images/client1.jpg" alt="Client 1" style="width: 100px; height: 100px; border-radius: 50%;">
-                <p>John Smith</p>
-              </li>
-              <li>
-                <img src="images/client2.jpg" alt="Client 2" style="width: 100px; height: 100px; border-radius: 50%;">
-                <p>Sarah Johnson</p>
-              </li>
-              <li>
-                <img src="images/client3.jpg" alt="Client 3" style="width: 100px; height: 100px; border-radius: 50%;">
-                <p>Michael Brown</p>
-              </li>
-            </ul>
+<body>
+  <!-- LOGO -->
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header container-fluid">
+          <a href="index.html" class="pull-left visible-md visible-lg visible-xs">
+            <img id="logo-img" src="images/logo.png" alt="Logo image">
+          </a>
+          <div class="navbar-brand">
+            <a href="#">
+              <h1>Bloom Valley Nursery</h1>
+            </a>
           </div>
-  
-           </div>
-      </section>
-      <section class="community-involvement">
-        <h3>Community Involvement</h3>
-        <p>At Bloom Valley Nursery, we take pride in actively participating in community initiatives. We believe in giving back to the local community that has supported us over the years.</p>
-      </section>
+          <div class="icon-container">
+            <ul id="nav-list" class="nav navbar-nav navbar-right"></ul>
+            <a href="about.html"><span class="fas fa-info"></span><br class="hidden-xs"> About</a>
+            <a href="gallery.html"><span class="fas fa-camera"></span><br class="hidden-xs"> Gallery</a>
+            <a href="gallery.html"><span class="fas fa-user"></span><br class="hidden-xs"> Customer Page</a>
+            <a href="cart.html"><span class="fas fa-shopping-cart"></span><br class="hidden-xs"> Cart</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- UPCOMING EVENTS SECTION -->
+  <main>
+    <section class="events-section">
+      <h2>Upcoming Events</h2>
+      <article class="event">
+        <h3>Spring Gardening Workshop</h3>
+        <p>Date: April 15, 2025</p>
+        <p>Time: 10:00 AM - 2:00 PM</p>
+        <p>Location: Bloom Valley Nursery</p>
+        <p>Join us for a hands-on workshop where you'll learn how to prepare your garden for spring! Tools and materials will be provided.</p>
+      </article>
+      <article class="event">
+        <h3>Plant Swap Meetup</h3>
+        <p>Date: May 20, 2025</p>
+        <p>Time: 12:00 PM - 4:00 PM</p>
+        <p>Location: Bloom Valley Community Center</p>
+        <p>Bring your plants and cuttings to swap with other gardening enthusiasts. A great way to expand your collection!</p>
+      </article>
+    </section>
+
+    <!-- CUSTOMER TESTIMONIALS -->
+    <section class="top-purchasers-section section-container">
+      <h2>What Our Customers Are Saying</h2>
+      <div class="flex-container">
+        <div class="top-purchaser">
+          <p><strong>John Smith</strong></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+        <div class="top-purchaser">
+          <p><strong>Sarah Johnson</strong></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+        <div class="top-purchaser">
+          <p><strong>Michael Brown</strong></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMUNITY INVOLVEMENT -->
+    <section class="community-involvement">
+      <h2>Community Involvement</h2>
+      <article class="event">
+        <h3>Caring Hearts</h3>
+        <p>Bloom Valley Nursery not only loves plants but also deeply cares for animals. Together with our customers, we helped a local cat shelter "Whiskers and Tails" continue its important work by raising the necessary funds to support their cause.</p>
+      </article>
+      <article class="event">
+        <h3>Greening Our Community Together</h3>
+        <p>Join us in planting trees to make our air cleaner and our community greener. We provide the trees for planting—each one helps improve the environment, providing fresh air and contributing to a healthier planet for future generations.</p>
+      </article>
+    </section>
   </main>
 
+  <!-- FOOTER -->
+   <!--FOOTER-->
+   <footer class="panel-footer">
+    <div class="container"> 
+      <div class="row">
+        <ul class="footer">
+          <nav>
+            <li><a href="#"><span class="fab fa-facebook"></span><br class="hidden-xs"></a></li>
+            <li><a href="#"><span class="fab fa-instagram"></span><br class="hidden-xs"></a></li>
+            <li><a href="#"><span class="fab fa-twitter"></span><br class="hidden-xs"></a></li>
+          </nav>  
+            <form action="#" method="post" class="subscribe-form">
+            <label for="email">Sign Up for our newsletter</label>
+            <input type="email" id="email" name="email" placeholder="email" required>
+            <button type="submit">Subscribe</button>
+        </ul>
+          <ul id="menu" class="menu-list">
+            <li id="clients-highlights" class="menu-item"><a href="index.html">Clients Highlights</a></li>
+            <li id="shopping-promos" class="menu-item"><a href="about.html">Shopping promos</a></li>
+            <li id="item-images" class="menu-item"><a href="menu.html">Item images</a></li>
+            <li id="shopping-promos-2" class="menu-item"><a href="about.html">Shopping perks</a></li>
+            <li id="categories" class="menu-item"><a href="menu.html">Categories</a></li>
+        </ul>
+      </div>
+  </footer>
+</body>
+</html>
 
-    <footer>Footer
-    
-    <nav>
-    <ul class="footer">
-    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-    <form action="#" method="post" class="subscribe-form">
-    <label for="email">Sign Up for our newsletter</label>
-    <input type="email" id="email" name="email" placeholder="email" required>
-    <button type="submit">Subscribe</button>
-  </form>
-
-</ul>
-
-<ul>
-<li><a href="index.html">Clients Highlights</a></li>
-<li><a href="about.html">Shopping promos</a></li>
-<li> <a href="menu.html">Item images</a></li>
-<li><a href="about.html">Shopping promos</a></li>
-<li> <a href="menu.html">Categories</a></li>
-</ul>
-</nav>
-    </footer>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 
 </html>

@@ -5,7 +5,6 @@
 body {
   
   font-family: "Comfortaa", "Calibri", "Arial", sans-serif;
-  color: black;
   background-color: #014038;
 }
 
@@ -86,12 +85,17 @@ li {
   text-decoration: none; /* Убирает подчеркивание у ссылок */
   margin-right: 0px; /* Добавляет отступы между иконками */
   display: inline-block; /* Устанавливает блочный элемент, но на одной строке */
+   color: #00231c;
 }
 
 .icon-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+.icon-container a:hover .fas {
+  color: #96BAA0; /* Новый цвет иконки при наведении */
 }
 
 /* WHY SHOP HERE  SECTION*/
@@ -171,10 +175,10 @@ li {
   position: relative;
   overflow: hidden;
   padding: 0;
-  margin: 0; /* Убираем отступы у изображения */
-  width: 100%; /* Заполняет всю ширину контейнера */
-  height: 100%; /* Заполняет всю высоту контейнера */
-  object-fit: cover; /* Сохраняет пропорции изображения */
+  margin: 0; 
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; 
 }
 
 /* SHOPPING PROMOS */
@@ -294,7 +298,14 @@ h2 {
 }
 
 .fab.fa-facebook, .fab.fa-instagram, .fab.fa-twitter {
-  font-size: 36px;
+  font-size: 36px; /* Размер иконок */
+  color: #014038; /* Основной цвет иконок */
+  transition: color 0.3s; /* Добавляет плавный переход для цвета */
+}
+
+
+.fab.fa-facebook:hover, .fab.fa-instagram:hover, .fab.fa-twitter:hover {
+  color: #96BAA0; /* Оставляем цвет таким же, как у основного состояния */
 }
 
 .menu-item a {
@@ -302,7 +313,7 @@ h2 {
 }
 
 .menu-item a:hover {
-  color: #F7F7F7;  /* Цвет при наведении поменять */
+  color: #F7F7F7; 
 }
 
 .section-container {
@@ -316,11 +327,9 @@ h2 {
 /* GALLERY */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  grid-template-columns: repeat(3, 1fr); /* Создает 3 колонки */
+  gap: 20px; /* Расстояние между элементами */
+  padding: 40px 20px; 
 }
 
 .gallery-item {
@@ -340,6 +349,10 @@ h2 {
   border-radius: 8px;
 }
 
+.gallery-container {
+  max-width: 1200px; /* Ограничение ширины галереи */
+  margin: 0 auto; /* Центрирование галереи на странице */
+}
 /* VIEW CART BUTTON */
 .view-cart {
   background-color: #F0C06D;
@@ -406,7 +419,7 @@ h2 {
 
 .about-section p {
   font-size: 1.1em;
-  color: #555;
+  color: #00231c;
   line-height: 1.6;
   font-family: "Arial", sans-serif;
 }
@@ -432,7 +445,7 @@ h2 {
 
 .hours-section li {
   font-size: 1.1em;
-  color: #555;
+  color: #00231c;
   margin-bottom: 10px;
 }
 
@@ -472,7 +485,7 @@ h2 {
   width: 100%;
   padding: 10px;
   font-size: 1em;
-  border: 1px solid #ccc;
+  border: 1px solid #014038;
   border-radius: 5px;
   box-sizing: border-box;
 }
@@ -512,4 +525,142 @@ h2 {
 
 .form-actions button[type="reset"]:hover {
   background-color: #96BAA0;
+}
+/* CUSTOMER PAGE UPCOMING EVENTS */
+.events-section {
+  max-width: 1200px; /* Ограничение ширины секции */
+  margin: 0 auto; /* Центрирование секции на странице */
+  padding: 40px 20px; /* Внешние отступы */
+  background-color: #014038; /* Фон для секции */
+  color: #00231c; /* Основной цвет текста */
+  border-radius: 8px; /* Сглаживание углов */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для секции */
+  
+}
+
+.events-section h2 {
+  text-align: center;
+  font-family: "Comfortaa", "Calibri", "Arial", sans-serif;
+  color: #F7F7F7;
+  margin-bottom: 20px;
+}
+
+.event {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #F7F7F7; /* Фон для отдельных событий */
+  border: 1px solid #96baa0; /* Граница для выделения */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Легкая тень для объемности */
+}
+
+.event h3 {
+  font-family: "Comfortaa", "Calibri", "Arial", sans-serif;
+  color: #014038;
+  margin-bottom: 10px;
+}
+
+.event p {
+  font-family: "Arial", sans-serif;
+  color: #00231c;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.event p:last-child {
+  margin-bottom: 0; /* Убирает лишний отступ у последнего абзаца */
+}
+
+.events-section article:hover {
+  background-color: #96BAA0; /* Светло-зеленый фон при наведении */
+  transform: translateY(-5px); /* Поднимает элемент при наведении */
+  transition: all 0.3s ease; /* Плавный переход */
+}
+
+/* What Our Customers Are Saying */
+.top-purchasers-section {
+  padding: 40px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.top-purchasers-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #014038;
+}
+
+/* Стили для каждого элемента "Top Purchasers" */
+.top-purchaser {
+  flex: 1;
+  padding: 20px;
+  background-color: #96baa0;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.top-purchaser:hover {
+  background-color: #f7f7f7;
+}
+
+/* Гибкая сетка для размещения элементов */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Расстояние между элементами */
+}
+
+/* COMMUNITY INVOLMENT */
+.community-involvement {
+  max-width: 1200px; /* Ограничение ширины секции */
+  margin: 0 auto; /* Центрирование секции на странице */
+  padding: 40px 20px; /* Внешние отступы */
+  background-color: #014038; /* Фон для секции */
+  color: #00231c; /* Основной цвет текста */
+  border-radius: 8px; /* Сглаживание углов */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для секции */
+}
+
+.community-involvement h2 {
+  text-align: center;
+  font-family: "Comfortaa", "Calibri", "Arial", sans-serif;
+  color: #f7f7f7;
+  margin-bottom: 20px;
+}
+
+.event {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #F7F7F7; /* Фон для отдельных событий */
+  border: 1px solid #96baa0; /* Граница для выделения */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Легкая тень для объемности */
+}
+
+.event h3 {
+  font-family: "Comfortaa", "Calibri", "Arial", sans-serif;
+  color: #014038;
+  margin-bottom: 10px;
+}
+
+.event p {
+  font-family: "Arial", sans-serif;
+  color: #00231c;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.event p:last-child {
+  margin-bottom: 0; /* Убирает лишний отступ у последнего абзаца */
+}
+
+.community-involvement article:hover {
+  background-color: #f7f7f7; /* Светло-зеленый фон при наведении */
+  transform: translateY(-5px); /* Поднимает элемент при наведении */
+  transition: all 0.3s ease; /* Плавный переход */
 }
