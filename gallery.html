@@ -44,87 +44,117 @@
 
     <main>
       <div class="shopping-cart">
-        <button class="view-cart"><span class="fas fa-shopping-cart"></span> View Shopping Cart</button>
+        <button class="view-cart" onclick="viewCart()">
+          <span class="fas fa-shopping-cart"></span> View Shopping Cart</button>
       </div>
       <div class="gallery-container">
     <section class="gallery">
       <div class="gallery-item">
         <img src="images/appleTree.png" alt="Photo 1" />
         <div class="description">A beautiful apple tree for your garden</div>
-        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-cart" onclick="addToCart('Apple Tree')">Add to Cart</button>
       </div>
       <div class="gallery-item">
         <img src="images/birchTree.png" alt="Photo 2" />
         <div class="description">Elegant birch tree to enhance your yard</div>
-        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-cart" onclick="addToCart('Birch Tree')">Add to Cart</button>
       </div>
       <div class="gallery-item">
         <img src="images/mapleTree.png" alt="Photo 3" />
         <div class="description">A vibrant maple tree with stunning leaves</div>
-        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-cart" onclick="addToCart('Maple Tree')">Add to Cart</button>
       </div>
       <div class="gallery-item">
         <img src="images/aloePlant.png" alt="Photo 4" />
         <div class="description">Aloe plant for natural healing and decor</div>
-        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-cart" onclick="addToCart('Aloe Plant')">Add to Cart</button>
       </div>
       <div class="gallery-item">
         <img src="images/spiderPlant.png" alt="Photo 5" />
         <div class="description">Low-maintenance spider plant for any space</div>
-        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-cart" onclick="addToCart('Spider Plant')">Add to Cart</button>
       </div>
       <div class="gallery-item">
       <img src="images/stringofPearls.png" alt="Photo 6" />
       <div class="description">Unique string of pearls succulent plant</div>
-      <button class="add-to-cart">Add to Cart</button>
+      <button class="add-to-cart" onclick="addToCart('String Of Pearls')">Add to Cart</button>
     </div>
       <div class="gallery-item">
         <img src="images/wateringCan.png" alt="Photo 7" />
         <div class="description">Classic watering can for garden care</div>
-        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-cart" onclick="addToCart('Watering Can')">Add to Cart</button>
       </div>
       <div class="gallery-item">
       <img src="images/pottingSoil.png" alt="Photo 8" />
       <div class="description">High-quality potting soil for healthy plants</div>
-      <button class="add-to-cart">Add to Cart</button>
+      <button class="add-to-cart" onclick="addToCart('Potting Soil')">Add to Cart</button>
       </div>
       <div class="gallery-item">
       <img src="images/birdHouse.png" alt="Photo 9" />
       <div class="description">Charming birdhouse for your feathered friends</div>
-      <button class="add-to-cart">Add to Cart</button>
+      <button class="add-to-cart" onclick="addToCart('Bird House')">Add to Cart</button>
     </div>
     </div>
-    
-    
+        
     </section>
   </main>
 
+  <button onclick="viewCart()">View Shopping Cart</button>
 
+  <!-- Modal for Item Added -->
+  <div id="item-added-modal" class="modal">
+      <div class="modal-content">
+        <p id="item-added-message"></p>
+          <button onclick="closeModal('item-added-modal')">Close</button>
+      </div>
+  </div>
+
+  <!-- Modal for Viewing Cart -->
+  <div id="cart-modal" class="modal">
+      <div class="modal-content">
+          <h2>Your Shopping Cart</h2>
+          <div id="cart-list"></div>
+          <button onclick="clearCart()">Clear Cart</button>
+          <button onclick="closeModal('cart-modal')">Continue Shopping</button>
+      </div>
+  </div>
   
    <!--FOOTER-->
    <footer class="panel-footer">
-    <div class="container"> 
+    <div class="container">
       <div class="row">
+        <!-- Социальные сети -->
         <ul class="footer">
           <nav>
             <li><a href="#"><span class="fab fa-facebook"></span><br class="hidden-xs"></a></li>
             <li><a href="#"><span class="fab fa-instagram"></span><br class="hidden-xs"></a></li>
             <li><a href="#"><span class="fab fa-twitter"></span><br class="hidden-xs"></a></li>
-          </nav>  
-            <form action="#" method="post" class="subscribe-form">
-            <label for="email">Sign Up for our newsletter</label>
-            <input type="email" id="email" name="email" placeholder="email" required>
-            <button type="submit">Subscribe</button>
+          </nav>
         </ul>
-          <ul id="menu" class="menu-list">
-            <li id="clients-highlights" class="menu-item"><a href="index.html">Clients Highlights</a></li>
-            <li id="shopping-promos" class="menu-item"><a href="about.html">Shopping promos</a></li>
-            <li id="item-images" class="menu-item"><a href="menu.html">Item images</a></li>
-            <li id="shopping-promos-2" class="menu-item"><a href="about.html">Shopping perks</a></li>
-            <li id="categories" class="menu-item"><a href="menu.html">Categories</a></li>
+  
+        <!-- Форма подписки -->
+        <ul class="footer">
+          <li>
+            <form id="subscribe-form" action="#" method="post" class="subscribe-form">
+              <label for="email">Sign Up for our newsletter</label>
+              <input type="email" id="email" name="email" placeholder="email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </li>
+        </ul>
+  
+        <!-- Меню -->
+        <ul id="menu" class="menu-list">
+          <li id="clients-highlights" class="menu-item"><a href="index.html">Clients Highlights</a></li>
+          <li id="shopping-promos" class="menu-item"><a href="about.html">Shopping promos</a></li>
+          <li id="item-images" class="menu-item"><a href="menu.html">Item images</a></li>
+          <li id="shopping-promos-2" class="menu-item"><a href="about.html">Shopping perks</a></li>
+          <li id="categories" class="menu-item"><a href="menu.html">Categories</a></li>
         </ul>
       </div>
+    </div>
   </footer>
+  
 </body>
 </html>
 
