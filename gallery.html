@@ -101,11 +101,14 @@
 
   <!-- Modal for Item Added -->
   <div id="item-added-modal" class="modal">
-      <div class="modal-content">
+    <div class="modal-content">
+        <h2>Item Added to Cart</h2>
         <p id="item-added-message"></p>
-          <button onclick="closeModal('item-added-modal')">Close</button>
-      </div>
-  </div>
+        <button onclick="closeModal('item-added-modal')">Continue Shopping</button>
+        <!-- Кнопка для оформления заказа -->
+        <button onclick="placeOrder()">Place Order</button>
+    </div>
+</div>
 
   <!-- Modal for Viewing Cart -->
   <div id="cart-modal" class="modal">

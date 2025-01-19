@@ -26,7 +26,8 @@ function placeOrder() {
   if (cart.length > 0) {
       alert("Your order has been placed!");
       clearCart();  // Очистить корзину после оформления заказа
-      closeModal('cart-modal');  // Закрыть модальное окно
+        closeModal('item-added-modal');  // Закрыть текущее модальное окно
+        closeModal('cart-modal');  // Закрыть модальное окно корзины (если оно открыто)
       showOrderConfirmation(); 
   } else {
       alert("Your cart is empty! Add items to the cart first.");
