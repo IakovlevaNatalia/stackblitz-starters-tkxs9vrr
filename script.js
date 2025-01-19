@@ -21,7 +21,20 @@ let cart = [];
 
             document.getElementById('cart-modal').style.display = 'flex';
         }
-
+        // Функция для оформления заказа
+function placeOrder() {
+  if (cart.length > 0) {
+      alert("Your order has been placed!");
+      clearCart();  // Очистить корзину после оформления заказа
+      closeModal('cart-modal');  // Закрыть модальное окно
+      showOrderConfirmation(); 
+  } else {
+      alert("Your cart is empty! Add items to the cart first.");
+  }
+}
+function showOrderConfirmation() {
+  document.getElementById('order-confirmation-modal').style.display = 'flex';
+}
         function clearCart() {
             cart = [];
             viewCart();

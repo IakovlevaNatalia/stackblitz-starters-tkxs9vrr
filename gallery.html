@@ -99,8 +99,6 @@
     </section>
   </main>
 
-  <button onclick="viewCart()">View Shopping Cart</button>
-
   <!-- Modal for Item Added -->
   <div id="item-added-modal" class="modal">
       <div class="modal-content">
@@ -116,8 +114,17 @@
           <div id="cart-list"></div>
           <button onclick="clearCart()">Clear Cart</button>
           <button onclick="closeModal('cart-modal')">Continue Shopping</button>
+          <button onclick="placeOrder()">Place Order</button>
       </div>
   </div>
+
+  <div id="order-confirmation-modal" class="modal">
+    <div class="modal-content">
+        <h2>Order Placed Successfully!</h2>
+        <p>Your order has been successfully placed. Thank you for shopping with us!</p>
+        <button onclick="closeModal('order-confirmation-modal')">Close</button>
+    </div>
+</div>
   
    <!--FOOTER-->
    <footer class="panel-footer">
