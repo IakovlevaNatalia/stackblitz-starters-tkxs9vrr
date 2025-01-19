@@ -8,30 +8,37 @@
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
       <link href="styles.css" rel="stylesheet">
     </head>
-
-        <!-- LOGO -->
-        <body>
-          <header>
-            <nav id="header-nav" class="navbar navbar-default">
-              <div class="container">
-                <div class="navbar-header container-fluid">
-                  <a href="index.html" class="pull-left visible-md visible-lg visible-xs">
-                    <img id="logo-img" src="images/logo.png" alt="Logo image">
-                  </a>
-                <div class="navbar-brand">
-                  <a href="#"><h1>Bloom Valley Nursery</h1></a>
-                </div>
-                <div class="icon-container">
-                  <ul id="nav-list" class="nav navbar-nav navbar-right"></ul>
-                  <a href="about.html"><span class="fas fa-info"></span><br class="hidden-xs"> About</a>
-                  <a href="gallery.html"><span class="fas fa-camera"></span><br class="hidden-xs"> Gallery</a>
-                  <a href="customer.html"><span class="fas fa-user"></span><br class="hidden-xs"> Customer Page</a>
-                  <a href="cart.html"><span class="fas fa-shopping-cart"></span><br class="hidden-xs"> Cart</a>
-                </div>
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header container-fluid">
+            <a href="index.html" class="pull-left visible-md visible-lg visible-xs">
+                <img id="logo-img" src="images/logo.png" alt="Logo image">
+            </a>
+            <div class="navbar-brand">
+              <a href="#"><h1>Bloom Valley Nursery</h1></a></div>
+            <div class="icon-container" id="fullmenu">
+              <ul id="nav-list" class="nav navbar-nav navbar-right"></ul>
+              <a href="about.html"><span class="fas fa-info"></span><br class="hidden-xs"> About</a>
+              <a href="gallery.html"><span class="fas fa-camera"></span><br class="hidden-xs"> Gallery</a>
+              <a href="customer.html"><span class="fas fa-user"></span><br class="hidden-xs"> Customer Page</a>
+              <a href="cart.html"><span class="fas fa-shopping-cart"></span><br class="hidden-xs"> Cart</a>
+              </div>
+              <div id="burgermenu" class="navbar-toggle" type="button" aria-label="Toggle navigation">
+              <svg xmlns="http://www.w3.org/2000/svg" height="2.0em" viewBox="0 0 448 512">
+                <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+              </svg>
+              <ul id="burgermenulinks">
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Gallery</a></li>
+                <li><a href="index.html">Customer Page</a></li>
+                <li><a href="index.html">Cart</a></li>
+             </ul>
             </div>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+   </header>
 
   <body>
 
@@ -88,6 +95,7 @@
     </div>
     </div>
     
+    
     </section>
   </main>
 
@@ -123,3 +131,4 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>

@@ -397,8 +397,8 @@ h2 {
 
 .shopping-cart {
   display: flex;
-  justify-content: center; /* Центрирование по горизонтали */
-  align-items: center;    /* Центрирование по вертикали, если нужно */
+  justify-content: center; 
+  align-items: center;    
   
 }
 
@@ -656,11 +656,73 @@ h2 {
 }
 
 .event p:last-child {
-  margin-bottom: 0; /* Убирает лишний отступ у последнего абзаца */
+  margin-bottom: 0; 
 }
 
 .community-involvement article:hover {
-  background-color: #f7f7f7; /* Светло-зеленый фон при наведении */
-  transform: translateY(-5px); /* Поднимает элемент при наведении */
-  transition: all 0.3s ease; /* Плавный переход */
+  background-color: #f7f7f7; 
+  transform: translateY(-5px); 
+  transition: all 0.3s ease; 
+}
+
+/* BURGER MENU */
+#burgermenulinks {
+  display: none; 
+  position: absolute; 
+  list-style-type: none;
+  text-align: center; 
+  padding: 25px 10px; 
+  width: 150px; 
+  color: #171717; 
+  background-color: #F7F7F7; 
+}
+
+#burgermenu:hover #burgermenulinks {
+  display: block; 
+  margin: 0 auto;
+  left: -11px;
+}
+
+/* По умолчанию бургер-меню скрыто, если на экране больше 480px */
+#burgermenu {
+  display: none; /* Бургер-меню скрыто на экранах больше 480px */
+}
+
+/* Для больших экранов, показываем полное меню */
+@media (min-width: 481px) {
+  #fullmenu {
+    display: block; /* Показываем полное меню на больших экранах */
+  }
+
+  #burgermenu {
+    display: none; /* Скрываем бургер-меню на больших экранах */
+  }
+
+  #burgermenulinks {
+    display: none; /* Скрываем бургер-меню на больших экранах */
+  }
+}
+
+/* Для маленьких экранов */
+@media (max-width: 480px) {
+  #fullmenu {
+    display: none; /* Скрываем полное меню на маленьких экранах */
+    
+  }
+  #logo-img {
+    display: none; /* Скрыть логотип */
+  }
+
+  #burgermenu {
+    display: block; /* Показываем бургер-меню на маленьких экранах */
+  }
+
+  #burgermenulinks {
+    display: none; /* Меню скрыто по умолчанию */
+  }
+
+  /* Когда бургер-меню активируется (по наведению), показываем список */
+  #burgermenu:hover #burgermenulinks {
+    display: block; /* Показываем меню при наведении */
+  }
 }
