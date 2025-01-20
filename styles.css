@@ -308,12 +308,32 @@ h2 {
   color: #96BAA0; /* Оставляем цвет таким же, как у основного состояния */
 }
 
+#menu {
+  list-style: none; /* Removes default list bullets */
+  padding: 0;
+  margin: 0;
+  display: flex; /* This arranges the items in a row */
+  justify-content: center; /* Centers the menu items horizontally */
+}
+
+.menu-item {
+  margin-right: 20px; /* Optional, adds space between items */
+}
+
 .menu-item a {
-  color: #014038;
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Ensures text color is inherited */
+}
+
+.menu-item:last-child {
+  margin-right: 0;
 }
 
 .menu-item a:hover {
-  color: #F7F7F7; 
+  color: #F7F7F7; /* Changes text color on hover */
+  background-color: #96BAA0; /* Adds a background color on hover */
+  padding: 5px 10px; /* Adds padding around the text */
+  border-radius: 5px; /* Optional: Rounds the corners */
 }
 
 .section-container {
@@ -323,6 +343,7 @@ h2 {
   max-width: 1500px; /* Максимальная ширина для ограничения контента */
   box-sizing: border-box; /* Учитывать отступы и границы в размере */
 }
+
 
 /* GALLERY */
 .gallery {
