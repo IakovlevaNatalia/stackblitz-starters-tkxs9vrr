@@ -291,29 +291,37 @@ h2 {
   padding-bottom: 30px;
   background-color: #F0C06D;
   border-top: 0;
+  
 }
 
 .panel-footer div.row {
-  margin-bottom: 35px;
+  margin-bottom: -25px;
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+  text-align: center; /* Текстовое центрирование */
+  
 }
 
-.fab.fa-facebook, .fab.fa-instagram, .fab.fa-twitter {
+.fab.fa-facebook, .fab.fa-instagram, .fab.fa-twitter, .fab.fa-pinterest {
   font-size: 36px; /* Размер иконок */
   color: #014038; /* Основной цвет иконок */
   transition: color 0.3s; /* Добавляет плавный переход для цвета */
 }
 
 
-.fab.fa-facebook:hover, .fab.fa-instagram:hover, .fab.fa-twitter:hover {
+.fab.fa-facebook:hover, .fab.fa-instagram:hover, .fab.fa-twitter:hover, .fab.fa-pinterest:hover  {
   color: #96BAA0; /* Оставляем цвет таким же, как у основного состояния */
 }
 
 #menu {
   list-style: none; /* Removes default list bullets */
   padding: 0;
-  margin: 0;
-  display: flex; /* This arranges the items in a row */
+  margin: 0 auto; /* Centers the menu block horizontally */
+  display: flex; /* Arranges items in a row */
   justify-content: center; /* Centers the menu items horizontally */
+  width: fit-content; /* Shrinks the menu to fit its content */
+  text-align: center; /* Aligns text items in the menu */
 }
 
 .menu-item {
@@ -342,8 +350,28 @@ h2 {
   padding-left: 30px; /* Отступ слева */
   max-width: 1500px; /* Максимальная ширина для ограничения контента */
   box-sizing: border-box; /* Учитывать отступы и границы в размере */
+  
+}
+.subscribe-form {
+  display: flex;
+  flex-direction: column; /* Располагаем элементы формы в колонку */
+  align-items: center; /* Центрируем элементы внутри формы */
 }
 
+.subscribe-form label {
+  margin-bottom: 10px; /* Отступ между меткой и полем ввода */
+}
+
+.subscribe-form input {
+  margin-bottom: 10px; /* Отступ между полем ввода и кнопкой */
+  padding: 8px;
+  width: 200px; /* Можно изменить в зависимости от желаемой ширины */
+}
+
+.subscribe-form button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
 
 /* GALLERY */
 .gallery {
@@ -746,6 +774,7 @@ h2 {
   #burgermenu:hover #burgermenulinks {
     display: block; /* Показываем меню при наведении */
   }
+  
 }
 
 

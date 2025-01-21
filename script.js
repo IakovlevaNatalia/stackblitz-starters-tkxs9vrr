@@ -76,3 +76,4 @@ function handleFormSubmit(event) {
 
   return false; // Предотвращает дальнейшую обработку формы
 }
+
