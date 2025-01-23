@@ -51,8 +51,8 @@ nav {
 }
 
 .navbar-brand a h1 {
-  margin: 0; /* Убирает отступы */
-  text-align: left; /* Заголовок слева */
+  margin: 0; 
+  text-align: left; 
 }
 
 nav a {
@@ -68,23 +68,23 @@ nav a {
 }
 
 li {
-  list-style: none; /* Убирает буллиты */
-  padding: 0; /* Убирает возможные отступы внутри элементов списка */
-  margin: 0; /* Убирает возможные внешние отступы */
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
 }
 
 .icon-container a .fas {
-  font-size: 36px; /* Размер иконок */
-  margin-left: 10px; /* Уменьшенный отступ между иконками */
+  font-size: 36px; 
+  margin-left: 10px; 
   display: inline-block;
-  text-decoration: none; /* Убирает подчеркивание у ссылок */
+  text-decoration: none; 
   
 }
 
 .icon-container a {
-  text-decoration: none; /* Убирает подчеркивание у ссылок */
-  margin-right: 0px; /* Добавляет отступы между иконками */
-  display: inline-block; /* Устанавливает блочный элемент, но на одной строке */
+  text-decoration: none; 
+  margin-right: 0px; 
+  display: inline-block; 
    color: #00231c;
 }
 
@@ -95,25 +95,23 @@ li {
 }
 
 .icon-container a:hover .fas {
-  color: #96BAA0; /* Новый цвет иконки при наведении */
+  color: #96BAA0; 
 }
 
 /* WHY SHOP HERE  SECTION*/
 .why-shop-here {
-  text-align: center; /* Выравнивание заголовка по центру */
+  text-align: center; 
   padding: 20px;
 }
 
-/* Использование flexbox для размещения контейнеров на одной строке */
 .flex-container {
   display: flex;
-  justify-content: space-between; /* Распределяет элементы по доступному пространству */
-  gap: 20px; /* Расстояние между элементами */
+  justify-content: space-between; 
+  gap: 20px; 
 }
 
-/* Стили для каждого контейнера */
 .perk {
-  flex: 1; /* Устанавливает одинаковую ширину для всех контейнеров */
+  flex: 1; 
   padding: 20px;
   background-color: #96baa0;
   border-radius: 8px;
@@ -122,7 +120,6 @@ li {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Стили для ховера, чтобы добавить эффект при наведении */
 .perk:hover {
   background-color: #f7f7f7;
 }
@@ -190,13 +187,12 @@ li {
 
 .flex-container {
   display: flex;
-  justify-content: space-between; /* Распределяет элементы по доступному пространству */
-  gap: 20px; /* Расстояние между элементами */
+  justify-content: space-between; 
+  gap: 20px; 
 }
 
-/* Стили для каждого контейнера */
 .promo {
-  flex: 1; /* Устанавливает одинаковую ширину для всех контейнеров */
+  flex: 1; 
   padding: 20px;
   background-color: #96baa0;
   border-radius: 8px;
@@ -205,7 +201,6 @@ li {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Стили для ховера, чтобы добавить эффект при наведении */
 .promo:hover {
   background-color: #f7f7f7;
 }
@@ -248,17 +243,16 @@ li {
   background-color: #F0C06D;
   color: #00231c;
   opacity: .8;
-  
 }
 
 #tree-tile img, #plants-tile img, #supply-tile img {
   position: relative;
   overflow: hidden;
   padding: 0;
-  margin: 0; /* Убираем отступы у изображения */
-  width: 100%; /* Заполняет всю ширину контейнера */
-  height: 100%; /* Заполняет всю высоту контейнера */
-  object-fit: cover; /* Сохраняет пропорции изображения */
+  margin: 0; 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
 }
 
 /* CLIENTS HIGHLIGHTS SECTION */
@@ -269,21 +263,22 @@ h2 {
   text-transform: uppercase;
 }
 .review {
-  list-style-type: none; /* Убирает буллеты */
+  list-style-type: none; 
   padding: 0;
   margin: 0;
-  display: flex; /* Размещает элементы на одной строке */
+  display: flex; 
 }
 
 .review li {
-  margin-right: 20px; /* Добавляет промежуток между элементами */
+  margin-right: 20px; 
 }
 
 .review li a {
-  text-decoration: none; /* Убирает подчеркивание с ссылки */
-  color: #00231c; /* Цвет текста */
-  font-size: 16px; /* Размер шрифта */
+  text-decoration: none; 
+  color: #00231c; 
+  font-size: 16px; 
 }
+
 /* FOOTER */
 .panel-footer {
   margin-top: 30px;
@@ -291,46 +286,44 @@ h2 {
   padding-bottom: 30px;
   background-color: #F0C06D;
   border-top: 0;
-  
 }
 
 .panel-footer div.row {
   margin-bottom: -25px;
   display: flex;
-  justify-content: center; /* Центрирование по горизонтали */
-  align-items: center; /* Центрирование по вертикали */
-  text-align: center; /* Текстовое центрирование */
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
   
 }
 
 .fab.fa-facebook, .fab.fa-instagram, .fab.fa-twitter, .fab.fa-pinterest {
-  font-size: 36px; /* Размер иконок */
-  color: #014038; /* Основной цвет иконок */
-  transition: color 0.3s; /* Добавляет плавный переход для цвета */
+  font-size: 36px; 
+  color: #014038; 
+  transition: color 0.3s;
 }
 
-
 .fab.fa-facebook:hover, .fab.fa-instagram:hover, .fab.fa-twitter:hover, .fab.fa-pinterest:hover  {
-  color: #96BAA0; /* Оставляем цвет таким же, как у основного состояния */
+  color: #96BAA0; 
 }
 
 #menu {
-  list-style: none; /* Removes default list bullets */
+  list-style: none; 
   padding: 0;
-  margin: 0 auto; /* Centers the menu block horizontally */
-  display: flex; /* Arranges items in a row */
-  justify-content: center; /* Centers the menu items horizontally */
-  width: fit-content; /* Shrinks the menu to fit its content */
-  text-align: center; /* Aligns text items in the menu */
+  margin: 0 auto; 
+  display: flex; 
+  justify-content: center; 
+  width: fit-content; 
+  text-align: center; 
 }
 
 .menu-item {
-  margin-right: 20px; /* Optional, adds space between items */
+  margin-right: 20px; 
 }
 
 .menu-item a {
-  text-decoration: none; /* Removes underline from links */
-  color: inherit; /* Ensures text color is inherited */
+  text-decoration: none; 
+  color: inherit; 
 }
 
 .menu-item:last-child {
@@ -338,8 +331,8 @@ h2 {
 }
 
 .menu-item a:hover {
-  color: #F7F7F7; /* Changes text color on hover */
-  background-color: #96BAA0; /* Adds a background color on hover */
+  color: #F7F7F7; 
+  background-color: #96BAA0; 
   padding: 5px 10px; /* Adds padding around the text */
   border-radius: 5px; /* Optional: Rounds the corners */
 }
@@ -371,6 +364,15 @@ h2 {
 .subscribe-form button {
   padding: 8px 16px;
   cursor: pointer;
+  background-color: #96BAA0; /* Example background color */
+  color: #00231C; /* Example font color */
+  border: 2px solid #00231C;;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+.subscribe-form button:hover {
+  background-color: #F7F7F7; /* Change to hover color */
+  color: #00231C; /* Change text color on hover */
 }
 
 /* GALLERY */
@@ -401,6 +403,16 @@ h2 {
 .gallery-container {
   max-width: 1200px; /* Ограничение ширины галереи */
   margin: 0 auto; /* Центрирование галереи на странице */
+}
+
+.title {
+  text-align: center; /* Центрируем текст */
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: px;
+  color: #F7F7F7;
 }
 /* VIEW CART BUTTON */
 .view-cart {
@@ -759,35 +771,76 @@ h2 {
     
   }
   #logo-img {
-    display: none; /* Скрыть логотип */
+    width: 50px; /* Задайте нужную ширину логотипа */
+    height: auto; /* Автоматически сохраняйте пропорции */
+    margin: 0;
+    
+  }
+  .navbar-brand h1 {
+    font-size: 18px; /* Уменьшенный размер текста */
+    line-height: 1.3;
+    text-align: left;
+    margin: 0;
+    
+  }
+  .navbar-brand {
+    display: flex; /* Включаем Flexbox */
+    align-items: center; /* Выравниваем по вертикали */
+    gap: 10px; /* Расстояние между логотипом и текстом */
   }
 
   #burgermenu {
-    display: block; /* Показываем бургер-меню на маленьких экранах */
-  }
-
-  #burgermenulinks {
-    display: none; /* Меню скрыто по умолчанию */
-  }
-
-  /* Когда бургер-меню активируется (по наведению), показываем список */
-  #burgermenu:hover #burgermenulinks {
-    display: block; /* Показываем меню при наведении */
-  }
-  
+    display: block;
+    padding: 10px;
+    background-color: #96BAA0;
+    border: 2px solid #F7F7F7;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative; /* Позиционирование для подменю */
 }
 
+#burgermenulinks {
+    display: none; /* Скрыто по умолчанию */
+    background-color: #F7F7F7;
+    border: 1px solid #BDD4DA;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 100%; /* Размещение под бургер-меню */
+    left: 0;
+    box-sizing: border-box; /* Учет отступов и рамки в ширину */
+    overflow-wrap: break-word; /* Перенос слов, если они не помещаются */
+    font-weight: bold;
+}
+
+#burgermenu:hover #burgermenulinks {
+    display: block; /* Показываем меню при наведении */
+}
+
+#burgermenulinks a {
+    color: #014038;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+#burgermenulinks a:hover {
+    color: #96BAA0; /* Цвет при наведении */
+}
+}
 
 .modal {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  width: 50%; /* или можно использовать фиксированную ширину, например, 400px */
+  height: auto;
+  transform: translate(-50%, -50%); /* Центрирует модальное окно */
   background-color: rgba(0, 0, 0, 0.5);
-  justify-content: center;
+ justify-content: center;
   align-items: center;
+  
 }
 
 .modal-content {
@@ -806,7 +859,10 @@ h2 {
 
 #cart-modal h2 {
 color: #00231c;
+
 }
+
 #cart-list {
   margin: 15px 0;
 }
+

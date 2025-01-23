@@ -8,29 +8,44 @@
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
       <link href="styles.css" rel="stylesheet">
     </head>
-
-    <!-- LOGO -->
-      <body>
-        <header>
-          <nav id="header-nav" class="navbar navbar-default">
-            <div class="container">
-              <div class="navbar-header container-fluid">
-                <a href="index.html" class="pull-left visible-md visible-lg visible-xs">
-                  <img id="logo-img" src="images/logo.png" alt="Logo image">
-                </a>
-              <div class="navbar-brand">
-                <a href="#"><h1>Bloom Valley Nursery</h1></a>
+          <!-- LOGO -->
+          <header>
+            <nav id="header-nav" class="navbar navbar-default">
+              <div class="container">
+                <div class="navbar-header container-fluid">
+                  <a href="index.html" class="pull-left visible-md visible-lg visible-xs">
+                    <img id="logo-img" src="images/logo.png" alt="Logo image">
+                  </a>
+                  <div class="navbar-brand">
+                    <a href="#">
+                      <h1>Bloom Valley Nursery</h1>
+                    </a>
+                  </div>
+        
+                  <!-- Full menu -->
+                  <div class="icon-container" id="fullmenu">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right"></ul>
+                    <a href="about.html"><span class="fas fa-info"></span><br class="hidden-xs"> About</a>
+                    <a href="gallery.html"><span class="fas fa-camera"></span><br class="hidden-xs"> Gallery</a>
+                    <a href="customer.html"><span class="fas fa-user"></span><br class="hidden-xs"> Customer Page</a>
+                  </div>
+        
+                  <!-- Burger menu -->
+                  <div id="burgermenu" class="navbar-toggle" type="button" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.0em" viewBox="0 0 448 512">
+                      <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                    <ul id="burgermenulinks">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                      <li><a href="customer.html">Customer Page</a></li>
+                      <li><a href="about.html">About Us</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div class="icon-container">
-                <ul id="nav-list" class="nav navbar-nav navbar-right"></ul>
-                <a href="index.html"><span class="fas fa-home"></span><br class="hidden-xs"> Home</a>
-                <a href="gallery.html"><span class="fas fa-camera"></span><br class="hidden-xs"> Gallery</a>
-                <a href="gallery.html"><span class="fas fa-user"></span><br class="hidden-xs"> Customer Page</a>
-              </div>
-          </div>
-        </div>
-      </nav>
-    </header>
+            </nav>
+         </header>
 <main>
   <section class="about-section section-container">
     <h2>About Us</h2>
@@ -74,8 +89,15 @@
         <button type="submit">Submit</button>
         <button type="reset">Clear</button>
       </div>
+      
     </form>
   </section>
+  <div id="thankYouModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <p>Thank you for your message!</p>
+    </div>
+  </div>
 </main>
   
    <!--FOOTER-->
@@ -88,11 +110,13 @@
             <li><a href="#"><span class="fab fa-facebook"></span><br class="hidden-xs"></a></li>
             <li><a href="#"><span class="fab fa-instagram"></span><br class="hidden-xs"></a></li>
             <li><a href="#"><span class="fab fa-twitter"></span><br class="hidden-xs"></a></li>
+            <li><a href="#"><span class="fab fa-pinterest"></span><br class="hidden-xs"></a></li>
           </nav>
         </ul>
+      </div>
   
         <!-- Форма подписки -->
-        <ul class="footer">
+        <ul class="footer" >
           <li>
             <form id="subscribe-form" action="#" method="post" class="subscribe-form">
               <label for="email">Sign Up for our newsletter</label>
@@ -104,11 +128,10 @@
   
         <!-- Меню -->
         <ul id="menu" class="menu-list">
-          <li id="clients-highlights" class="menu-item"><a href="index.html">Clients Highlights</a></li>
-          <li id="shopping-promos" class="menu-item"><a href="about.html">Shopping promos</a></li>
-          <li id="item-images" class="menu-item"><a href="menu.html">Item images</a></li>
-          <li id="shopping-promos-2" class="menu-item"><a href="about.html">Shopping perks</a></li>
-          <li id="categories" class="menu-item"><a href="menu.html">Categories</a></li>
+          <li id="clients-highlights" class="menu-item"><a href="index.html">Home</a></li>
+          <li id="categories" class="menu-item"><a href="gallery.html">Shoping by categories</a></li>
+          <li id="item-images" class="menu-item"><a href="customer.html">Customer Page</a></li>
+          <li id="item-images" class="menu-item"><a href="about.html">About Us</a></li>
         </ul>
       </div>
     </div>

@@ -28,11 +28,11 @@
                 <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
               </svg>
               <ul id="burgermenulinks">
-                <li><a href="index.html">About</a></li>
-                <li><a href="index.html">Gallery</a></li>
-                <li><a href="index.html">Customer Page</a></li>
-                <li><a href="index.html">Cart</a></li>
-             </ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="customer.html">Customer Page</a></li>
+                <li><a href="about.html">About Us</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -42,6 +42,9 @@
   <body>
 
     <main>
+      <div class="title">
+        <h2>Our Gallery</h2>
+    </div>
       <div class="shopping-cart">
         <button class="view-cart" onclick="viewCart()">
           <span class="fas fa-shopping-cart"></span> View Shopping Cart</button>
@@ -138,11 +141,13 @@
             <li><a href="#"><span class="fab fa-facebook"></span><br class="hidden-xs"></a></li>
             <li><a href="#"><span class="fab fa-instagram"></span><br class="hidden-xs"></a></li>
             <li><a href="#"><span class="fab fa-twitter"></span><br class="hidden-xs"></a></li>
+            <li><a href="#"><span class="fab fa-pinterest"></span><br class="hidden-xs"></a></li>
           </nav>
         </ul>
+      </div>
   
         <!-- Форма подписки -->
-        <ul class="footer">
+        <ul class="footer" >
           <li>
             <form id="subscribe-form" action="#" method="post" class="subscribe-form">
               <label for="email">Sign Up for our newsletter</label>
@@ -154,11 +159,10 @@
   
         <!-- Меню -->
         <ul id="menu" class="menu-list">
-          <li id="clients-highlights" class="menu-item"><a href="index.html">Clients Highlights</a></li>
-          <li id="shopping-promos" class="menu-item"><a href="about.html">Shopping promos</a></li>
-          <li id="item-images" class="menu-item"><a href="menu.html">Item images</a></li>
-          <li id="shopping-promos-2" class="menu-item"><a href="about.html">Shopping perks</a></li>
-          <li id="categories" class="menu-item"><a href="menu.html">Categories</a></li>
+          <li id="clients-highlights" class="menu-item"><a href="index.html">Home</a></li>
+          <li id="categories" class="menu-item"><a href="gallery.html">Shoping by categories</a></li>
+          <li id="item-images" class="menu-item"><a href="customer.html">Customer Page</a></li>
+          <li id="item-images" class="menu-item"><a href="about.html">About Us</a></li>
         </ul>
       </div>
     </div>

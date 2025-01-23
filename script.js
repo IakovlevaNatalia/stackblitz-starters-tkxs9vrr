@@ -5,6 +5,14 @@ document.getElementById('subscribe-form').addEventListener('submit', function(ev
 });
 
 let cart = [];
+function closeModal(modalId) {
+  const modal = document.getElementById(modalId);
+  if (modal) {
+      modal.style.display = 'none'; // Скрыть модальное окно
+  } else {
+      console.log('Modal not found:', modalId); // Сообщение, если модальное окно не найдено
+  }
+}
 
         function addToCart(item) {
             cart.push(item);
@@ -48,32 +56,40 @@ function clearCart() {
         alert("No items to clear!"); // Сообщение, если корзина уже пуста
     }
 }
-function handleFormSubmit(event) {
-  event.preventDefault(); // Предотвращает стандартную отправку формы
 
-  // Собираем данные из формы
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const phone = document.getElementById('phone').value.trim();
-  const feedback = document.getElementById('feedback').value.trim();
 
-  // Проверяем, чтобы обязательные поля не были пустыми
-  if (!name || !email) {
-    alert("Name and Email are required fields!");
+   // Form submit handler
+   function handleFormSubmit(event) {
+    event.preventDefault(); // Prevent default form submission
+  
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const feedback = document.getElementById("feedback").value.trim();
+  
+    const missingFields = [];
+    if (!name) missingFields.push("Name");
+    if (!email) missingFields.push("Email");
+    if (!phone) missingFields.push("Phone");
+    if (!feedback) missingFields.push("Message");
+  
+    if (missingFields.length > 0) {
+      alert(`Please enter your ${missingFields.join(", ")}.`);
+      return false;
+    }
+  
+    const customerData = { name, email, phone, feedback };
+    localStorage.setItem("customerData", JSON.stringify(customerData));
+  
+    document.getElementById("contactForm").reset();
+    document.getElementById("thankYouModal").style.display = "block";
+  
     return false;
   }
-
-  // Создаем объект с данными
-  const customerData = {
-    name,
-    email,
-    phone,
-    feedback,
-  };
-
-  // Очищаем форму
-  document.getElementById('contactForm').reset();
-
-  return false; // Предотвращает дальнейшую обработку формы
+// Close modal handler
+function closeModal() {
+  const modal = document.getElementById('thankYouModal');
+  if (modal) {
+    modal.style.display = 'none'; // Hide the modal
+  }
 }
-
