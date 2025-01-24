@@ -1,174 +1,175 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>Bloom Valley Nursery</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width">
-      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-      <link href="styles.css" rel="stylesheet">
-    </head>
-    <header>
-      <nav id="header-nav" class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header container-fluid">
-            <a href="index.html" class="pull-left visible-md visible-lg visible-xs">
-                <img id="logo-img" src="images/logo.png" alt="Logo image">
-            </a>
-            <div class="navbar-brand">
-              <a href="#"><h1>Bloom Valley Nursery</h1></a></div>
-            <div class="icon-container" id="fullmenu">
-              <ul id="nav-list" class="nav navbar-nav navbar-right"></ul>
-              <a href="index.html"><span class="fas fa-home"></span><br class="hidden-xs"> Home</a>
-              <a href="about.html"><span class="fas fa-info"></span><br class="hidden-xs"> About</a>
-              <a href="customer.html"><span class="fas fa-user"></span><br class="hidden-xs"> Customer Page</a>
-              </div>
-              <div id="burgermenu" class="navbar-toggle" type="button" aria-label="Toggle navigation">
-              <svg xmlns="http://www.w3.org/2000/svg" height="2.0em" viewBox="0 0 448 512">
-                <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-              </svg>
-              <ul id="burgermenulinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="customer.html">Customer Page</a></li>
-                <li><a href="about.html">About Us</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-   </header>
 
-  <body>
+<head>
+    <title>Bloom Valley Nursery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<header>
+    <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header container-fluid">
+                <a href="index.html" class="pull-left visible-md visible-lg visible-xs">
+                    <img id="logo-img" src="images/logo.png" alt="Logo image">
+                </a>
+                <div class="navbar-brand">
+                    <a href="#">
+                        <h1>Bloom Valley Nursery</h1>
+                    </a>
+                </div>
+                <div class="icon-container" id="fullmenu">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right"></ul>
+                    <a href="index.html"><span class="fas fa-home"></span><br class="hidden-xs"> Home</a>
+                    <a href="about.html"><span class="fas fa-info"></span><br class="hidden-xs"> About</a>
+                    <a href="customer.html"><span class="fas fa-user"></span><br class="hidden-xs"> Customer Page</a>
+                </div>
+                <div id="burgermenu" class="navbar-toggle" type="button" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.0em" viewBox="0 0 448 512">
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                    <ul id="burgermenulinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="customer.html">Customer Page</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
 
     <main>
-      <div class="title">
-        <h2>Our Gallery</h2>
-    </div>
-      <div class="shopping-cart">
-        <button class="view-cart" onclick="viewCart()">
-          <span class="fas fa-shopping-cart"></span> View Shopping Cart</button>
-      </div>
-      <div class="gallery-container">
-    <section class="gallery">
-      <div class="gallery-item">
-        <img src="images/appleTree.png" alt="Photo 1" />
-        <div class="description">A beautiful apple tree for your garden</div>
-        <button class="add-to-cart" onclick="addToCart('Apple Tree')">Add to Cart</button>
-      </div>
-      <div class="gallery-item">
-        <img src="images/birchTree.png" alt="Photo 2" />
-        <div class="description">Elegant birch tree to enhance your yard</div>
-        <button class="add-to-cart" onclick="addToCart('Birch Tree')">Add to Cart</button>
-      </div>
-      <div class="gallery-item">
-        <img src="images/mapleTree.png" alt="Photo 3" />
-        <div class="description">A vibrant maple tree with stunning leaves</div>
-        <button class="add-to-cart" onclick="addToCart('Maple Tree')">Add to Cart</button>
-      </div>
-      <div class="gallery-item">
-        <img src="images/aloePlant.png" alt="Photo 4" />
-        <div class="description">Aloe plant for natural healing and decor</div>
-        <button class="add-to-cart" onclick="addToCart('Aloe Plant')">Add to Cart</button>
-      </div>
-      <div class="gallery-item">
-        <img src="images/spiderPlant.png" alt="Photo 5" />
-        <div class="description">Low-maintenance spider plant for any space</div>
-        <button class="add-to-cart" onclick="addToCart('Spider Plant')">Add to Cart</button>
-      </div>
-      <div class="gallery-item">
-      <img src="images/stringofPearls.png" alt="Photo 6" />
-      <div class="description">Unique string of pearls succulent plant</div>
-      <button class="add-to-cart" onclick="addToCart('String Of Pearls')">Add to Cart</button>
-    </div>
-      <div class="gallery-item">
-        <img src="images/wateringCan.png" alt="Photo 7" />
-        <div class="description">Classic watering can for garden care</div>
-        <button class="add-to-cart" onclick="addToCart('Watering Can')">Add to Cart</button>
-      </div>
-      <div class="gallery-item">
-      <img src="images/pottingSoil.png" alt="Photo 8" />
-      <div class="description">High-quality potting soil for healthy plants</div>
-      <button class="add-to-cart" onclick="addToCart('Potting Soil')">Add to Cart</button>
-      </div>
-      <div class="gallery-item">
-      <img src="images/birdHouse.png" alt="Photo 9" />
-      <div class="description">Charming birdhouse for your feathered friends</div>
-      <button class="add-to-cart" onclick="addToCart('Bird House')">Add to Cart</button>
-    </div>
-    </div>
-        
-    </section>
-  </main>
+        <div class="title">
+            <h2>Our Gallery</h2>
+        </div>
+        <div class="shopping-cart">
+            <button class="view-cart" onclick="viewCart()">
+                <span class="fas fa-shopping-cart"></span> View Shopping Cart</button>
+        </div>
+        <div class="gallery-container">
+            <section class="gallery">
+                <div class="gallery-item">
+                    <img src="images/appleTree.png" alt="Photo 1" />
+                    <div class="description">A beautiful apple tree for your garden</div>
+                    <button class="add-to-cart" onclick="addToCart('Apple Tree')">Add to Cart</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/birchTree.png" alt="Photo 2" />
+                    <div class="description">Elegant birch tree to enhance your yard</div>
+                    <button class="add-to-cart" onclick="addToCart('Birch Tree')">Add to Cart</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/mapleTree.png" alt="Photo 3" />
+                    <div class="description">A vibrant maple tree with stunning leaves</div>
+                    <button class="add-to-cart" onclick="addToCart('Maple Tree')">Add to Cart</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/aloePlant.png" alt="Photo 4" />
+                    <div class="description">Aloe plant for natural healing and decor</div>
+                    <button class="add-to-cart" onclick="addToCart('Aloe Plant')">Add to Cart</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/spiderPlant.png" alt="Photo 5" />
+                    <div class="description">Low-maintenance spider plant for any space</div>
+                    <button class="add-to-cart" onclick="addToCart('Spider Plant')">Add to Cart</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/stringofPearls.png" alt="Photo 6" />
+                    <div class="description">Unique string of pearls succulent plant</div>
+                    <button class="add-to-cart" onclick="addToCart('String Of Pearls')">Add to Cart</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/wateringCan.png" alt="Photo 7" />
+                    <div class="description">Classic watering can for garden care</div>
+                    <button class="add-to-cart" onclick="addToCart('Watering Can')">Add to Cart</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/pottingSoil.png" alt="Photo 8" />
+                    <div class="description">High-quality potting soil for healthy plants</div>
+                    <button class="add-to-cart" onclick="addToCart('Potting Soil')">Add to Cart</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/birdHouse.png" alt="Photo 9" />
+                    <div class="description">Charming birdhouse for your feathered friends</div>
+                    <button class="add-to-cart" onclick="addToCart('Bird House')">Add to Cart</button>
+                </div>
+            </section>
+    </main>
 
-  <!-- Modal for Item Added -->
-  <div id="item-added-modal" class="modal">
-    <div class="modal-content">
-        <h2>Item Added to Cart</h2>
-        <p id="item-added-message"></p>
-        <button onclick="closeModal('item-added-modal')">Continue Shopping</button>
-        <!-- Кнопка для оформления заказа -->
-        <button onclick="placeOrder()">Place Order</button>
+    <!-- Modal for Item Added -->
+    <div id="item-added-modal" class="modal">
+        <div class="modal-content">
+            <h2>Item Added to Cart</h2>
+            <p id="item-added-message"></p>
+            <button onclick="closeModal('item-added-modal')">Continue Shopping</button>
+            <button onclick="placeOrder()">Place Order</button>
+        </div>
     </div>
-</div>
 
-  <!-- Modal for Viewing Cart -->
-  <div id="cart-modal" class="modal">
-      <div class="modal-content">
-          <h2>Your Shopping Cart</h2>
-          <div id="cart-list"></div>
-          <button onclick="clearCart()">Clear Cart</button>
-          <button onclick="closeModal('cart-modal')">Continue Shopping</button>
-          <button onclick="placeOrder()">Place Order</button>
-      </div>
-  </div>
+    <!-- Modal for Viewing Cart -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-list"></div>
+            <button onclick="clearCart()">Clear Cart</button>
+            <button onclick="closeModal('cart-modal')">Continue Shopping</button>
+            <button onclick="placeOrder()">Place Order</button>
+        </div>
+    </div>
 
-  <div id="order-confirmation-modal" class="modal">
-    <div class="modal-content">
-        <h2>Order Placed Successfully!</h2>
-        <p>Your order has been successfully placed. Thank you for shopping with us!</p>
-        <button onclick="closeModal('order-confirmation-modal')">Close</button>
+    <div id="order-confirmation-modal" class="modal">
+        <div class="modal-content">
+            <h2>Order Placed Successfully!</h2>
+            <p>Your order has been successfully placed. Thank you for shopping with us!</p>
+            <button onclick="closeModal('order-confirmation-modal')">Close</button>
+        </div>
     </div>
-</div>
-  
-   <!--FOOTER-->
-   <footer class="panel-footer">
-    <div class="container">
-      <div class="row">
-        <!-- Социальные сети -->
-        <ul class="footer">
-          <nav>
-            <li><a href="#"><span class="fab fa-facebook"></span><br class="hidden-xs"></a></li>
-            <li><a href="#"><span class="fab fa-instagram"></span><br class="hidden-xs"></a></li>
-            <li><a href="#"><span class="fab fa-twitter"></span><br class="hidden-xs"></a></li>
-            <li><a href="#"><span class="fab fa-pinterest"></span><br class="hidden-xs"></a></li>
-          </nav>
-        </ul>
-      </div>
-  
-        <!-- Форма подписки -->
-        <ul class="footer" >
-          <li>
-            <form id="subscribe-form" action="#" method="post" class="subscribe-form">
-              <label for="email">Sign Up for our newsletter</label>
-              <input type="email" id="email" name="email" placeholder="email" required>
-              <button type="submit">Subscribe</button>
-            </form>
-          </li>
-        </ul>
-  
-        <!-- Меню -->
-        <ul id="menu" class="menu-list">
-          <li id="clients-highlights" class="menu-item"><a href="index.html">Home</a></li>
-          <li id="categories" class="menu-item"><a href="gallery.html">Shoping by categories</a></li>
-          <li id="item-images" class="menu-item"><a href="customer.html">Customer Page</a></li>
-          <li id="item-images" class="menu-item"><a href="about.html">About Us</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  
+
+    <!--FOOTER-->
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Social media -->
+                <ul class="footer">
+                    <nav>
+                        <li><a href="#"><span class="fab fa-facebook"></span><br class="hidden-xs"></a></li>
+                        <li><a href="#"><span class="fab fa-instagram"></span><br class="hidden-xs"></a></li>
+                        <li><a href="#"><span class="fab fa-twitter"></span><br class="hidden-xs"></a></li>
+                        <li><a href="#"><span class="fab fa-pinterest"></span><br class="hidden-xs"></a></li>
+                    </nav>
+                </ul>
+            </div>
+
+            <!-- Subscribe -->
+            <ul class="footer">
+                <li>
+                    <form id="subscribe-form" action="#" method="post" class="subscribe-form">
+                        <label for="email">Sign Up for our newsletter</label>
+                        <input type="email" id="email" name="email" placeholder="email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </li>
+            </ul>
+
+            <!-- Menu -->
+            <ul id="menu" class="menu-list">
+                <li id="clients-highlights" class="menu-item"><a href="index.html">Home</a></li>
+                <li id="categories" class="menu-item"><a href="gallery.html">Shoping by categories</a></li>
+                <li id="item-images" class="menu-item"><a href="customer.html">Customer Page</a></li>
+                <li id="item-images" class="menu-item"><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
